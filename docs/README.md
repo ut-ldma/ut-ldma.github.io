@@ -1,10 +1,8 @@
-# About
+# Tutorial: (RL4CAS) Reinforcement Learning for Computer Architecture and Systems Research
 
-WebJeda is a web designing company
-.
-.
-.
+Reinforcement learning has been demonstrated as a powerful and promising tool in many scientific and gaming problems. Recently, RL has shown promising results to solve problems in the area of computer architecture and compiler. Nevertheless, the lack of an easily accessible reinforcement learning framework and tutorial has prevented its full potential in solving architectural, security, and optimization problems. 
 
-**Disclaimer:** This website is under constant modification.
-If you find something isn't right then,
-I might be doing some change in the back-end.
+In this tutorial, we aim to make RL accessible to computer architecture and system researchers, lowering the barrier for researchers to use RL in their own domain specific problems. The tutorial will be a combination of lectures/talks and hands-on labs. We will use our recent research artifacts as an example to demonstrate the effectiveness of RL in computer architecture and system research.
+
+Stay tuned for more information. 
+
