@@ -12,18 +12,18 @@ First, we will give a general introduction on the foundations of RL, in which we
 **Expected Outcome:** This tutorial will create concrete examples and hands on experience to the audience on how to formulate a computer architecture and system problem as an RL problem, and run RL training. We hope the attendance will proactively use RL in their own research problems after the tutorial.
 
 ## This tutorial
-The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando. The speaker includes Yuandong Tian, Xiaomeng Yang, Chris Cummins, Mulong Luo and Wenjie Xiong.
+The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando. The speakers include Yuandong Tian, Xiaomeng Yang, Chris Cummins, Mulong Luo and Wenjie Xiong.
 
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
-| TBD | Introduction to RL | Yuandong Tian |
-| TBD | Introduction to gym environment | Yuandong Tian |
-| TBD | Introduction to RLMeta, an easily accessible RL framework | Xiaomeng Yang |
-| TBD | CompilerGym: RL for compiler optimization | Chris Cummins |
-| TBD | Introduction to cache side channel in computer architecture | Mulong Luo, Wenjie Xiong |
-| TBD | Formulating cache side channel as RL | Mulong Luo, Wenjie Xiong |
-| TBD | Using RL training to find new side channel attacks and bypass detection mechanisms | Mulong Luo |
-| TBD | Lab: hands on with RL for cache side channel exploration | Mulong Luo |
+| TBD | Introduction to RL | [Yuandong Tian](https://yuandong-tian.com) |
+| TBD | Introduction to gym environment | [Yuandong Tian](https://yuandong-tian.com) |
+| TBD | Introduction to RLMeta, an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
+| TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
+| TBD | Introduction to cache side channel in computer architecture | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
+| TBD | Formulating cache side channel as RL | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
+| TBD | Using RL training to find new side channel attacks and bypass detection mechanisms | [Mulong Luo](https://mulongluo.me) |
+| TBD | Lab: hands on with RL for cache side channel exploration | [Mulong Luo](https://mulongluo.me) |
 
 
 ## Contact us
