@@ -14,6 +14,19 @@ This tutorial will create concrete examples and hands on experience to the audie
 ## This tutorial
 The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando.
 
+| Time  | Topic | Speaker |
+| ------------- | :-------------: | :-------: |
+| 1:00 - 1:15pm  | Introduction to `RL4CAS`  | |
+|| Introduction to RL | Yuandong Tian |
+|| Introduction to gym environment | Yuandong Tian |
+|| Introduction to RLMeta, an easily accessible RL framework | Xiaomeng Yang |
+|| CompilerGym: RL for compiler optimization | Chris Cummins |
+|| Introduction to cache side channel in computer architecture | Mulong Luo, Wenjie Xiong |
+|| Formulating cache side channel as RL | Mulong Luo, Wenjie Xiong |
+|| Using RL training to find new side channel attacks and bypass detection mechanisms | Mulong Luo |
+|| Lab: hands on with RL for cache side channel exploration | Mulong Luo |
+
+
 ## Contact us
 For any further questions please contact <ml2558@cornell.edu>
 
