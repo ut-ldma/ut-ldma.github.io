@@ -5,7 +5,7 @@
 
 **This Tutorial:** We aim to make RL accessible to computer architecture and system researchers, lowering the barrier for researchers to use RL in their own domain specific problems. The tutorial will be a combination of lectures/talks and hands-on labs. We will use our recent research artifacts as an example to demonstrate the effectiveness of RL in computer architecture and system research.
 
-First, we will give a general introduction on the foundations of RL, in which we explain the RL concept, the RL environment (gym), and a RL training framework. Then we will discuss the application of RL in computer systems. The first example is CompilerGym, which improves the performance of code using RL-curated compiler flags. The second example is AutoCAT, where the RL agent is used to explore the potential cache-timing attacks. We will provide the detailed RL formulation, the example code and a lab section to give the audience hands-on experience on how to solve a computer system problem using RL. Below is the tentative schedule for the tutorial.
+First, we will give a general introduction on the foundations of RL, in which we explain the RL concept, the RL environment (gym), and a RL training framework. Then we will discuss the application of RL in computer systems. The first example is [CompilerGym](https://compilergym.com/), which improves the performance of code using RL-curated compiler flags. The second example is [AutoCAT](https://github.com/facebookresearch/AutoCAT), where the RL agent is used to explore the potential cache-timing attacks. We will provide the detailed RL formulation, the example code and a lab section to give the audience hands-on experience on how to solve a computer system problem using RL. Below is the tentative schedule for the tutorial.
 
 **Target Audience:** The target audience include but not limited to computer architecture and systems (attending ISCA, and other conference attendees at FCRC) researchers who are interested in machine learning methods and their applications in architecture and systems, applied machine learning researchers who are exploring new applications of machine learning in domain-specific problems. Graduate and undergraduate students who are interested in computer systems and machine learning in general are especially suitable for this tutorial as the tutorial provides hands-on coding experience with RL.
 
@@ -17,8 +17,8 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
 | TBD | Introduction to RL | [Yuandong Tian](https://yuandong-tian.com) |
-| TBD | Introduction to gym environment | [Yuandong Tian](https://yuandong-tian.com) |
-| TBD | Introduction to RLMeta, an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
+| TBD | Introduction to [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
+| TBD | Introduction to [RLMeta](https://github.com/facebookresearch/rlmeta), an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
 | TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
 | TBD | Introduction to cache side channel in computer architecture | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
 | TBD | Formulating cache side channel as RL | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
