@@ -20,7 +20,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
 | TBD | RL for security  | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
 | TBD | Introduction to RL framework including [RLMeta](https://github.com/facebookresearch/rlmeta), an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
-| TBD | Lab: hands on with RL for cache side channel exploration | [Mulong Luo](https://mulongluo.me) |
+| TBD | Lab: hands on with RL for system (one example) | [Mulong Luo](https://mulongluo.me) |
 
 
 ## Contact us
