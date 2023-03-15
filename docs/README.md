@@ -20,9 +20,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | TBD | Introduction to [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
 | TBD | Introduction to [RLMeta](https://github.com/facebookresearch/rlmeta), an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
 | TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
-| TBD | Introduction to cache side channel in computer architecture | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
-| TBD | Formulating cache side channel as RL | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
-| TBD | Using RL training to find new side channel attacks and bypass detection mechanisms | [Mulong Luo](https://mulongluo.me) |
+| TBD | Introduction to cache side channel in computer architecture,  Formulating cache side channel as RL, Using RL training to find new side channel attacks and bypass detection mechanisms  | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
 | TBD | Lab: hands on with RL for cache side channel exploration | [Mulong Luo](https://mulongluo.me) |
 
 
