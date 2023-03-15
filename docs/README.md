@@ -12,7 +12,7 @@ First, we will give a general introduction on the foundations of RL, in which we
 **Expected Outcome:** This tutorial will create concrete examples and hands on experience to the audience on how to formulate a computer architecture and system problem as an RL problem, and run RL training. We hope the attendance will proactively use RL in their own research problems after the tutorial.
 
 ## This tutorial
-The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando. The speakers include Yuandong Tian, Xiaomeng Yang, Chris Cummins, Mulong Luo and Wenjie Xiong.
+The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando on  Saturaday, June 17th, 2023, 8am-12pm. The speakers include Yuandong Tian, Xiaomeng Yang, Chris Cummins, Mulong Luo and Wenjie Xiong.
 
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
