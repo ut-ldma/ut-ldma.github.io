@@ -19,7 +19,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | TBD | Introduction to RL and [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
 | TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
 | TBD | RL for computer architecture and security  | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
-| TBD | Introduction to RL framework including [RLMeta](https://github.com/facebookresearch/rlmeta), an easily accessible RL framework | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
+| TBD | Introduction to RL framework including [RLMeta](https://github.com/facebookresearch/rlmeta) and [TorchRL](http://github.com/pytorch/rl), easily accessible RL frameworks | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
 | TBD | Lab: hands on with RL for system (1-2 examples) | [Mulong Luo](https://mulongluo.me) |
 
 Stay tuned for more information!
@@ -28,6 +28,7 @@ Stay tuned for more information!
 For any further questions please contact <ml2558@cornell.edu>
 
 ## About us
+
 
 |  |  Organizer |
 | ------------- | :------------- | 
