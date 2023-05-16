@@ -16,11 +16,14 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
-| TBD | Introduction to RL and [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
-| TBD | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
-| TBD | RL for computer architecture and security  | [Mulong Luo](https://mulongluo.me), [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/) |
-| TBD | Introduction to RL framework including [RLMeta](https://github.com/facebookresearch/rlmeta) and [TorchRL](http://github.com/pytorch/rl), easily accessible RL frameworks | [Xiaomeng Yang](https://www.linkedin.com/in/xiaomeng-yang-356a976b/) |
-| TBD | Lab: hands on with RL for system (1-2 examples) | [Mulong Luo](https://mulongluo.me) |
+| 8:30-8:40am | Welcoming Remarks | |
+| 8:40-9:10am | Introduction to RL and [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
+| 9:10-9:40am | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
+| 9:50-10:00am | Coffee Break | |
+| 9:50-10:20am | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), [Mulong Luo](https://mulongluo.me) |
+|10:20-10:30am | Break| |
+| 10:20am-10:50am | Introduction to RL frameworks including [RLMeta](https://github.com/facebookresearch/rlmeta) and [TorchRL](http://github.com/pytorch/rl), easily accessible RL frameworks | [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk) |
+| 11:00am-12:00pm | Lab: hands on with RL for system (1-2 examples) | [Mulong Luo](https://mulongluo.me) |
 
 Stay tuned for more information!
 
