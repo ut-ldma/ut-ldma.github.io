@@ -12,18 +12,18 @@ First, we will give a general introduction on the foundations of RL, in which we
 **Expected Outcome:** This tutorial will create concrete examples and hands on experience to the audience on how to formulate a computer architecture and system problem as an RL problem, and run RL training. We hope the attendance will proactively use RL in their own research problems after the tutorial.
 
 ## This tutorial
-The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando on  Saturaday, June 17th, 2023, 8am-12pm. The speakers include Yuandong Tian, Xiaomeng Yang, Chris Cummins, Mulong Luo and Wenjie Xiong.
+The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando on  Saturaday, June 17th, 2023, 8am-12pm. The speakers include Yuandong Tian, Chris Cummins, Vincent Moens, Mulong Luo and Wenjie Xiong.
 
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
 | 8:30-8:40a | Welcoming Remarks | |
-| 8:40-9:10a | Introduction to RL and [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com) |
-| 9:10-9:40a | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/) |
+| 8:40-9:10a | Introduction to RL and [gym](https://github.com/openai/gym) environment | [Yuandong Tian](https://yuandong-tian.com), Meta AI |
+| 9:10-9:40a | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/), Meta AI |
 | 9:50-10:00a | Coffee Break | |
-| 9:50-10:20a | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), [Mulong Luo](https://mulongluo.me) |
+| 9:50-10:20a | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech, [Mulong Luo](https://mulongluo.me), Cornell |
 |10:20-10:30a | Break| |
-| 10:30-11:00a | Introduction to RL frameworks including [RLMeta](https://github.com/facebookresearch/rlmeta) and [TorchRL](http://github.com/pytorch/rl), easily accessible RL frameworks | [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk) |
-| 11:00a-12:00p | Lab: hands on with RL for system (1-2 examples) | [Mulong Luo](https://mulongluo.me) |
+| 10:30-11:00a | Introduction to RL frameworks including [RLMeta](https://github.com/facebookresearch/rlmeta) and [TorchRL](http://github.com/pytorch/rl), easily accessible RL frameworks | [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
+| 11:00a-12:00p | Lab: hands on with RL for system (1-2 examples) | [Mulong Luo](https://mulongluo.me), Cornell |
 
 Stay tuned for more information!
 
