@@ -17,9 +17,9 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
 | 9:00-9:10a | Welcoming Remarks | |
-| 9:10-9:40a | Introduction to RL and its applications to systems | [Yuandong Tian](https://yuandong-tian.com), Meta AI |
-| 9:40-10:10a | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/), Meta AI |
-| 10:10-10:45a | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech |
+| 9:10-9:45a | Introduction to RL and its applications to systems | [Yuandong Tian](https://yuandong-tian.com), Meta AI |
+| 9:45-10:15a | CompilerGym: RL for compiler optimization | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/), Meta AI |
+| 10:15-10:45a | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech |
 | 10:45-11:00a| Introduction to [TorchRL](http://github.com/pytorch/rl), an easily accessible RL framework|[Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 |11:00-11:20a | Coffee Break| |
 | 10:20-11:40a | [TorchRL](http://github.com/pytorch/rl) applications | [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
