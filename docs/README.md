@@ -32,7 +32,8 @@ For any further questions please contact <ml2558@cornell.edu>
 
 ## About us
 
-
+|  |  Invited Speakers  |
+| ------------- | :------------- | 
 |  |  Organizer |
 | ------------- | :------------- | 
 | <img src="imgs/mulong.jpeg" width=1500 align=right> | **Mulong Luo** (Cornell) currently a final-year Ph.D. candidate at Cornell University advised by Prof. Edward Suh. His research interests are in computer architecture, side channel, and machine learning. His work has been shortlisted for Top Picks in Hardware and Embedded Security, and he has also won best paper award at CPS-SPC workshop.|
