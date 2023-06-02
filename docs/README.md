@@ -22,7 +22,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | 10:15-10:45a | RL for computer architecture and security  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech |
 | 10:45-11:00a| Introduction to [TorchRL](http://github.com/pytorch/rl), an easily accessible RL framework|[Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 | 11:00-11:20a | Coffee Break| |
-| 11:20-11:40a | Lab: hands on with RL for system using TorchRL | [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI and [Mulong Luo](https://mulongluo.me), Cornell |
+| 11:20-11:40a | Lab: hands on with RL for system using TorchRL |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 
 Stay tuned for more information!
 
