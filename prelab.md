@@ -4,7 +4,7 @@ The lab uses torchRL and open AI gym. The training can be performed on CPU/GPU, 
 In order to streamline the setup process and focus on the environment construction and training we have AWS ```g5.xlarge``` instances for use and 
 provide docker images to manage all the dependencies. 
 
-# Access the AWS g5.xlarge instance
+## Access the AWS g5.xlarge instance
 
 To access the ```g5.xlarge``` instance, please use the following google form
 
@@ -12,7 +12,7 @@ To access the ```g5.xlarge``` instance, please use the following google form
 
 Once you submit your email, the login method and credentials will be emailed.
 
-# Launch the docker image
+## Launch the docker image
 
 Once you log on the AWS instance, please use the following command to pull the docker image 
 
