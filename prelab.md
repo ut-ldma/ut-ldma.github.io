@@ -1,10 +1,10 @@
-# Introduction
+### Introduction
 
 The lab uses torchRL and open AI gym. The training can be performed on CPU/GPU, however, it is best that the experiments is running on GPU. 
 In order to streamline the setup process and focus on the environment construction and training we have AWS ```g5.xlarge``` instances for use and 
 provide docker images to manage all the dependencies. 
 
-## Access the AWS g5.xlarge instance
+### Access the AWS g5.xlarge instance
 
 To access the ```g5.xlarge``` instance, please use the following google form
 
@@ -12,7 +12,7 @@ To access the ```g5.xlarge``` instance, please use the following google form
 
 Once you submit your email, the login method and credentials will be emailed.
 
-## Launch the docker image
+### Launch the docker image
 
 Once you log on the AWS instance, please use the following command to pull the docker image 
 
@@ -28,7 +28,7 @@ $ docker run -it --gpus all ml2558/autocat-torchrl /bin/bash
 
 After that you will be prompt to a docker shell.
 
-# Activate the conda environment
+### Activate the conda environment
 
 inside the docker container, set the conda environment variables and activate the py38 environment
 
@@ -37,13 +37,13 @@ inside the docker container, set the conda environment variables and activate th
 # conda activate py38
 ```
 
-# Create an ```wandb``` account for visualizing the training progress.
+### Create an ```wandb``` account for visualizing the training progress.
 
 ```wandb``` is a popular tool for visiualizing machine learning-related data. If you are already have an account you can skip the signup process and get your API key associated with your ```wandb``` account.
 
 Other wise please sign up here [```https://wandb.ai```](https://wanddb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
 
-# Clone the code and start the training
+### Clone the code and start the training
 
 Once you have set up the ```wandb``` account, you can clone the code inside the docker shell
 
