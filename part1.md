@@ -137,6 +137,9 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
         - Length within the limit: a small negative reward
         - Length exceeding the limit: a large negative reward
 
+#### Putting together
+
+Putting together the defined actions, states and reward, we summarize the skeleton here 
 
 
 
