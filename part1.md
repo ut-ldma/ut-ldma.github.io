@@ -24,9 +24,7 @@ The main focus of the environment used is a cache simulator, which forms the bac
 
 ### Learn to play the guessing game
 
-The cache guessing game is played as the following. First the attacker makes a sequence of memory access and observe the access latency, after acquiring enough information (decided by the player/agent itself, it tries to guess the secret )
-Victim read data from an unknown secret address
-Attacker make memory accesses (read/write/flush) 
+The cache guessing game is played as the following. First the attacker makes a sequence of memory access  (read/write/flush) and observe the access latency, after acquiring enough information (decided by the player/agent itself), it tries to guess the secret. Thus, the information the attacker gets from the game is the access latency, while the actions 
 
 
 Objective 
