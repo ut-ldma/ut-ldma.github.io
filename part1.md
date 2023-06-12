@@ -21,3 +21,14 @@ The main focus of the environment used is a cache simulator, which forms the bac
 ```flush()```: flush a specific address from the cache hierachy
 
 ```parse_address()```: Parse the address into block, tag, offset
+
+### Learn to play the guessing game
+
+The cache guessing game is played as the following. First the attacker makes a sequence of memory access and observe the access latency, after acquiring enough information (decided by the player/agent itself, it tries to guess the secret )
+Victim read data from an unknown secret address
+Attacker make memory accesses (read/write/flush) 
+
+
+Objective 
+Attacker’s guess correct rate
+
