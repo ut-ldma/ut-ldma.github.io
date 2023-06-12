@@ -72,14 +72,19 @@ Here is a brief summary of the cache guessing game:
 The cache guessing game, described above is defined as the follows using the gym API
 
 * Gym Environment
-    - Define action
+    - Define actions
         - ```action_space```: defined in ```init()```
         - ```action```: defined in ```step()```
     - Define state
         - ```Observation_space```: defined in ```init()```
         - ```Observation/state```: defined in ```step()```
-    - Define reward 
+    - Define rewards
         - ```reward``` for different scenario defined in ```step()```
+
+We discuss the several parts in detail.
+
+#### Define Actions
+
 
 
 
