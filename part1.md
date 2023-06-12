@@ -22,7 +22,7 @@ Below is a brief summary of the gym API:
 
 ### Cache Simulator Interface
 
-The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator implements the basic functions that are representative of a real-world cache. These include
+The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator (in ```src/cache.py```) implements the basic functions that are representative of a real-world cache. These include
 
 ```init()```, ```read()```, ```write()```, ```flush()``` and ```parse_address()```, these functions are defined accordingly.
 
@@ -139,7 +139,24 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 
 #### Putting together
 
-Putting together the defined actions, states and reward, we summarize the skeleton here 
+Putting together the defined actions, states and reward, we summarize the skeleton of the gym environment that implements the cache guessing game here.
+
+* Gym API:
+    - ```init()```
+        - Instantiate the cache simulator l1
+        - ```observation_space```: spaces.
+        - ```action_space```: space.Discrete() 
+
+    - ```step(action) --> state, reward, done, info```
+        - Parse the action into ```[ address, is_guess, is_victim, is_flush, victim_addr ]```
+        - Depending on the action, invoke ```l1.read()``` correspondingly
+
+    - ```reset()```
+        - Reset the cache simulator 
+ 
+ The entire code of the gym environment for cache guessing game is in ```src/cache_guessing_game_env_impl.py```.
+ 
+
 
 
 
