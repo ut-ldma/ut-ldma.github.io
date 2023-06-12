@@ -109,9 +109,35 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 ```
 
 * how to interact with the cache simulator l1 to update the simulator state:
-    - Guess action  no update to l1
-    - Read action  l1.read(adress)
-    - Wait and allow victim access action  l1.read(victim_address)
+    - Guess action: no update to l1
+    - Read action: ```l1.read(adress)```
+    - Wait and allow victim access action: ```l1.read(victim_address)```
+
+
+#### Define State
+
+* The state include is represented as a X times Y matrix
+    - Each row is a 4-element tuple
+        - ```[latency, victim_accessed, action, steps_count]```
+        - ```latency```: 0 hit, 1 miss, 2NA
+        - ```victim_accessed```: 0  not accessed, 1  accessed
+        - ```action```: the action used 
+        - ```steps_count```: the current steps
+
+* We keep Y row of this as history  this history provide more information for the RL agent to decide what actions should be taken
+
+* This state_space is defined in ```init()```
+
+#### Define Reward
+
+* After each step(), the reward is assigned based on state and action
+    - guess action, guess is correct: a positive reward is assigned
+    - guess action, guess is wrong: a negative reward is assigned
+    - Not a guess action
+        - Length within the limit: a small negative reward
+        - Length exceeding the limit: a large negative reward
+
+
 
 
 
