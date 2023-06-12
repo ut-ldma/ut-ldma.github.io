@@ -8,4 +8,16 @@ We explain how the gym environment is constructed for reinforcement learning.
 
 ### Cache Simulator Interface
 
-The main focus of 
+The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator implements the basic functions that are representative of a real-world cache. These include
+
+```init()```, ```read()```, ```write()```, ```flush()``` and ```parse_address()```, these functions are defined accordingly.
+
+```init()```: instantiate and initialize the cache simulator class
+
+```read()```: perform a reading operation through the cache interface
+
+```write()```: perform a write operation through the cache interface
+
+```flush()```: flush a specific address from the cache hierachy
+
+```parse_address()```: Parse the address into block, tag, offset
