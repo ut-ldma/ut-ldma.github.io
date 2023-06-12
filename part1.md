@@ -119,8 +119,8 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 * The state include is represented as a X times Y matrix
     - Each row is a 4-element tuple
         - ```[latency, victim_accessed, action, steps_count]```
-        - ```latency``` : 0 hit, 1 miss, 2NA
-        - ```victim_accessed``` : 0  not accessed, 1  accessed
+        - ```latency``` : 0 hit, 1 miss, 2NA
+        - ```victim_accessed``` : 0 not accessed, 1 accessed
         - ```action``` : the action used 
         - ```steps_count``` : the current steps
 
