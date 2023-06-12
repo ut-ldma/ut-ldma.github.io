@@ -31,16 +31,16 @@ Here is a brief summary of the cache guessing game:
 * Agent: Attacker
 
 * Environment: Cache
-- architecture simulator 
-- cache in the processor
+    - architecture simulator 
+    - cache in the processor
 
 * Actions
-- attacker makes an access (read)
-- attacker waits for victim access
-- attacker guesses the secret
+    - attacker makes an access (read)
+    - attacker waits for victim access
+    - attacker guesses the secret
 
 * Observation
-- latency of attacker accesses
+    - latency of attacker accesses
 
 
 
