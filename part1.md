@@ -85,6 +85,19 @@ We discuss the several parts in detail.
 
 #### Define Actions
 
+As described, there are three types of actions, listed below (assume there are N different addresses and there are M possible secrets).
+* Action
+    - Read an address: there are N actions
+    - Wait and allow victim access the secret: one action
+    - Guess the secret:there are M actions
+
+There are N + M + 1 actions 
+
+Use one hot encoding, represented in 
+	self.action_space = spaces.Discrete(
+	len(self.attacker_address_space) + 	1+len(self.victim_address_space))
+
+
 
 
 
