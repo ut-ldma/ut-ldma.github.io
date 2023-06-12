@@ -89,7 +89,7 @@ As described, there are three types of actions, listed below (assume there are N
 * Action
     - Read an address: there are N actions
     - Wait and allow victim access the secret: one action
-    - Guess the secret:there are M actions
+    - Guess the secret: there are M actions
 
 There are N + M + 1 actions 
 
