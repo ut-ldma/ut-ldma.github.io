@@ -6,6 +6,20 @@ We explain how the gym environment is constructed for reinforcement learning.
 
 ```gym``` is an standard interface developed by open AI, it is defined as a python class with three methods ```step()```, ```__init__()```, and ```reset()```. It has become a standard for RL research and many mainstream RL frameworks support gym environment. For more information please refer to (https://www.gymlibrary.dev)[https://www.gymlibrary.dev].
 
+Below is a brief summary of the gym API:
+
+* ```__init()__```
+    - ```observation_space```:
+    - ```action_space```: the action space is defined here
+
+* ```step(action) --> state, reward, done, info```
+    - ```action```: How to perform the action is defined here
+    - ```state```: What the agent is observed is defined here
+    - ```reward```: Reward is defined here
+
+* ```reset()```
+
+
 ### Cache Simulator Interface
 
 The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator implements the basic functions that are representative of a real-world cache. These include
@@ -41,6 +55,16 @@ Here is a brief summary of the cache guessing game:
 
 * Observation
     - latency of attacker accesses
+
+* Reward
+    - guess correct: positive reward
+    - guess wrong: negative reward
+    - each step: small negative reward
+
+* Maximizing long-term reward
+    - more correct guesses
+    - fewer wrong guesses
+    - fewer number of steps
 
 
 
