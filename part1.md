@@ -91,11 +91,28 @@ As described, there are three types of actions, listed below (assume there are N
     - Wait and allow victim access the secret: one action
     - Guess the secret: there are M actions
 
-There are N + M + 1 actions 
+There are ```N + M + 1``` actions 
 
 Use one hot encoding, represented in 
-	self.action_space = spaces.Discrete(
-	len(self.attacker_address_space) + 	1+len(self.victim_address_space))
+
+```
+self.action_space = spaces.Discrete(len(self.attacker_address_space) + 1+len(self.victim_address_space))
+```
+
+Given an action encoded in ```spaces.Discrete```
+* how to parse the action 
+
+```
+def parse_action(self, action):
+...
+return [ address, is_guess, is_victim, is_flush, victim_addr ] 
+```
+
+* how to interact with the cache simulator l1 to update the simulator state:
+    - Guess action  no update to l1
+    - Read action  l1.read(adress)
+    - Wait and allow victim access action  l1.read(victim_address)
+
 
 
 
