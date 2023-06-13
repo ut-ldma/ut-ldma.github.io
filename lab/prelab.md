@@ -45,14 +45,19 @@ Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or fo
 
 Below we show the Wandb webpage, click on the top right to sign up or sign in.
 ![](fig/wandb.png)
+<img src="fig/wandb.png" alt="drawing" width="200"/>
 
-After sign up and log in, click on the top left and find "Profile Settings".
+
+
+After sign up and log in, click on the top left and find "User Settings".
 
 ![](fig/wandb_setting.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 Inside the profile setting, scroll down and find danger zone, copy the API key and pasted to a note where you can later retrive.
 
 ![](fig/wandb_key.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 
 
@@ -73,22 +78,28 @@ You can test the code here.
 Select (2) when prompted and paste your ```wandb``` API keys.
 
 ![](fig/wandb_choice.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 Then Paste your wandb API keys here.
 
 ![](fig/paste_api_key.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 Your RL training job should be start running.
 
 ![](fig/running_screen.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 After that you can open your browser and go to wandb.ai. Select the running job in the list.
 
 ![](fig/wandb_runs.png) 
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
 Here the training progress is shown in wandb for this job you just launched.
 
 ![](fig/wandb_plot.png)
+<img src="drawing.jpg" alt="drawing" width="200"/>
+
 Which shows the test_reward, test_trajectory length, train_reward, and frames.
 
 
