@@ -44,7 +44,7 @@ inside the docker container, set the conda environment variables and activate th
 Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
 
 Below we show the Wandb webpage, click on the top right to signup.
-()[fig/wandb.png]
+![](fig/wandb.png)
 
 ### Clone the code and start the training
 
