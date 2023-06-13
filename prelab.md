@@ -41,7 +41,7 @@ inside the docker container, set the conda environment variables and activate th
 
 ```wandb``` is a popular tool for visiualizing machine learning-related data. If you are already have an account you can skip the signup process and get your API key associated with your ```wandb``` account.
 
-Other wise please sign up here [```https://wandb.ai```](https://wanddb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
+Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
 
 ### Clone the code and start the training
 
