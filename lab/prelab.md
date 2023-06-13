@@ -43,8 +43,18 @@ inside the docker container, set the conda environment variables and activate th
 
 Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
 
-Below we show the Wandb webpage, click on the top right to signup.
+Below we show the Wandb webpage, click on the top right to sign up or sign in.
 ![](fig/wandb.png)
+
+After sign up and log in, click on the top left and find "Profile Settings".
+
+![](fig/wandb_setting)
+
+Inside the profile setting, scroll down and find danger zone, copy the API key and pasted to a note where you can later retrive.
+
+![](fig/wandb_key)
+
+
 
 ### Clone the code and start the training
 
