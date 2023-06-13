@@ -48,11 +48,11 @@ Below we show the Wandb webpage, click on the top right to sign up or sign in.
 
 After sign up and log in, click on the top left and find "Profile Settings".
 
-![](fig/wandb_setting)
+![](fig/wandb_setting.png)
 
 Inside the profile setting, scroll down and find danger zone, copy the API key and pasted to a note where you can later retrive.
 
-![](fig/wandb_key)
+![](fig/wandb_key.png)
 
 
 
