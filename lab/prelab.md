@@ -72,7 +72,7 @@ You can test the code here.
 ```
 Select (2) when prompted and paste your ```wandb``` API keys.
 
-![](fig/wandb_choice.png)
+![](fig/wandb_choice.png| width=100)
 
 Then Paste your wandb API keys here.
 
