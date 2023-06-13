@@ -88,7 +88,7 @@ After that you can open your browser and go to wandb.ai. Select the running job 
 
 Here the training progress is shown in wandb for this job you just launched.
 
-![](fig/wandb_plot.png =x250)
+![](fig/wandb_plot.png)
 Which shows the test_reward, test_trajectory length, train_reward, and frames.
 
 
