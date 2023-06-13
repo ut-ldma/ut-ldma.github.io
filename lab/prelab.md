@@ -45,7 +45,7 @@ Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or fo
 
 Below we show the Wandb webpage, click on the top right to sign up or sign in.
 ![](fig/wandb.png)
-<img src="fig/wandb.png" alt="drawing" width="200"/>
+<img src="fig/wandb.png" alt="drawing" width="800"/>
 
 
 
@@ -78,7 +78,7 @@ You can test the code here.
 Select (2) when prompted and paste your ```wandb``` API keys.
 
 ![](fig/wandb_choice.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="drawing.jpg" alt="drawing" width="800"/>
 
 Then Paste your wandb API keys here.
 
