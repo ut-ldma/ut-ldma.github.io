@@ -72,4 +72,23 @@ You can test the code here.
 ```
 Select (2) when prompted and paste your ```wandb``` API keys.
 
+![](fig/wandb_choice.png)
+
+Then Paste your wandb API keys here.
+
+![](fig/paste_api_key.png)
+
+Your RL training job should be start running.
+
+![](fig/running_screen.png)
+
+After that you can open your browser and go to wandb.ai. Select the running job in the list.
+
+![](fig/wandb_runs.png) 
+
+Here the training progress is shown in wandb for this job you just launched.
+
+![](fig/wandb_plot.png)
+Which shows the test_reward, test_trajectory length, train_reward, and frames.
+
 
