@@ -44,7 +44,6 @@ inside the docker container, set the conda environment variables and activate th
 Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
 
 Below we show the Wandb webpage, click on the top right to sign up or sign in.
-![](fig/wandb.png)
 <img src="fig/wandb.png" alt="drawing" width="800"/>
 
 
@@ -52,12 +51,12 @@ Below we show the Wandb webpage, click on the top right to sign up or sign in.
 After sign up and log in, click on the top left and find "User Settings".
 
 ![](fig/wandb_setting.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/wandb_setting.png" alt="drawing" width="800"/>
 
 Inside the profile setting, scroll down and find danger zone, copy the API key and pasted to a note where you can later retrive.
 
 ![](fig/wandb_key.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/wandb_key.png" alt="drawing" width="800"/>
 
 
 
@@ -78,27 +77,27 @@ You can test the code here.
 Select (2) when prompted and paste your ```wandb``` API keys.
 
 ![](fig/wandb_choice.png)
-<img src="drawing.jpg" alt="drawing" width="800"/>
+<img src="fig/wandb_choice.png" alt="drawing" width="800"/>
 
 Then Paste your wandb API keys here.
 
 ![](fig/paste_api_key.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/paste_api_key.png" alt="drawing" width="800"/>
 
 Your RL training job should be start running.
 
 ![](fig/running_screen.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/running_screen.png" alt="drawing" width="800"/>
 
 After that you can open your browser and go to wandb.ai. Select the running job in the list.
 
 ![](fig/wandb_runs.png) 
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/wandb_runs.png" alt="drawing" width="800"/>
 
 Here the training progress is shown in wandb for this job you just launched.
 
 ![](fig/wandb_plot.png)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="fig/wandb_plot.png" alt="drawing" width="800"/>
 
 Which shows the test_reward, test_trajectory length, train_reward, and frames.
 
