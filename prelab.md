@@ -17,13 +17,13 @@ Once you submit your email, the login method and credentials will be emailed.
 Once you log on the AWS instance, please use the following command to pull the docker image 
 
 ```
-$ docker pull ml2558/autocat-torchrl
+$ docker pull ml2558/autocat-torchrl:new
 ```
 
 Once it is finished, please use the following command to launch the docker image
 
 ```
-$ docker run -it --gpus all ml2558/autocat-torchrl /bin/bash 
+$ docker run -it --gpus all ml2558/autocat-torchrl:new /bin/bash 
 ```
 
 After that you will be prompt to a docker shell.
@@ -55,7 +55,7 @@ You can test the code here.
 
 ```
 # cd lab/src/torchrl
-# python ppo_attack.py
+# python train_ppo_attack.py
 ```
 Select (2) when prompted and paste your ```wandb``` API keys.
 
