@@ -26,15 +26,15 @@ The main focus of the environment used is a cache simulator, which forms the bac
 
 ```init()```, ```read()```, ```write()```, ```clflush()``` and ```parse_address()```, these functions are defined accordingly.
 
-[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#11): instantiate and initialize the cache simulator class
+[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L11): instantiate and initialize the cache simulator class
 
-[```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#95): perform a reading operation through the cache interface
+[```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L95): perform a reading operation through the cache interface
 
-[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#171): perform a write operation through the cache interface
+[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L171): perform a write operation through the cache interface
 
-[```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#69): flush a specific address from the cache hierachy
+[```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L69): flush a specific address from the cache hierachy
 
-[```_parse_address()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#174): Parse the address into block, tag, offset
+[```_parse_address()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L174): Parse the address into block, tag, offset
 
 ### Learn to play the guessing game
 
