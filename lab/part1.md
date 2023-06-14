@@ -76,7 +76,7 @@ The cache guessing game, described above is defined as the follows using the gym
         - [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172): defined in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
         - ```action```: defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
     - Define state
-        - [```observation_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185): defined in ```__init()__```
+        - [```observation_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185): defined in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
         - [```observation/state```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L327): defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
     - Define rewards
         - ```reward``` for different scenario defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
@@ -93,14 +93,14 @@ As described, there are three types of actions, listed below (assume there are N
 
 There are ```N + M + 1``` actions 
 
-Use one hot encoding, represented in 
+Use one hot encoding, represented in [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172)
 
 ```
 self.action_space = spaces.Discrete(len(self.attacker_address_space) + 1+len(self.victim_address_space))
 ```
 
 Given an action encoded in ```spaces.Discrete```
-* how to parse the action 
+* how to parse the action is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#LL426)
 
 ```
 def parse_action(self, action):
@@ -109,9 +109,9 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 ```
 
 * how to interact with the cache simulator l1 to update the simulator state:
-    - Guess action : no update to l1
-    - Read action : ```l1.read(adress)```
-    - Wait and allow victim access action : ```l1.read(victim_address)```
+    - Guess action : no update to l1, but check the [correctness of guess](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L260)
+    - Read action : [```l1.read(adress)```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L283)
+    - Wait and allow victim access action : [```l1.read(victim_address)```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L249)
 
 
 #### Define State
