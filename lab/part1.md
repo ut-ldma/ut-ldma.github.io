@@ -1,4 +1,4 @@
-## Part 1: The Gym Enviornment
+## Part 1: The Gym Enviornment 
 
 We explain how the gym environment is constructed for reinforcement learning.
 
@@ -22,19 +22,19 @@ Below is a brief summary of the gym API:
 
 ### Cache Simulator Interface
 
-The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator (in ```src/cache.py```) implements the basic functions that are representative of a real-world cache. These include
+The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator (in [```src/cache.py```](https://github.com/rl4cas/lab/blob/main/src/cache.py) ) implements the basic functions that are representative of a real-world cache. These include
 
-```init()```, ```read()```, ```write()```, ```flush()``` and ```parse_address()```, these functions are defined accordingly.
+```init()```, ```read()```, ```write()```, ```clflush()``` and ```parse_address()```, these functions are defined accordingly.
 
-```init()```: instantiate and initialize the cache simulator class
+[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#11): instantiate and initialize the cache simulator class
 
-```read()```: perform a reading operation through the cache interface
+[```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#95): perform a reading operation through the cache interface
 
-```write()```: perform a write operation through the cache interface
+[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#171): perform a write operation through the cache interface
 
-```flush()```: flush a specific address from the cache hierachy
+[```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#69): flush a specific address from the cache hierachy
 
-```parse_address()```: Parse the address into block, tag, offset
+[```_parse_address()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#174): Parse the address into block, tag, offset
 
 ### Learn to play the guessing game
 
