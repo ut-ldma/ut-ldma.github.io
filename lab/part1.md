@@ -117,9 +117,9 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 
 #### Define State
 
-* The state/observation is defined as an instance of [```spaces.Box```](https://www.gymlibrary.dev/api/spaces/#box).
+* The state/observation is defined as an instance of [```spaces.Box```](https://www.gymlibrary.dev/api/spaces/#box), which is instantiated [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185) in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
 
-* The state include is represented as a X times Y matrix
+* The state include is represented as a X-by-4 matrix, where X is the length of the history window defined [window_size](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L147) 
     - Each row is a 4-element tuple
         - ```[latency, victim_accessed, action, steps_count]```
         - ```latency``` : 0 hit , 1 miss , 2 NA
@@ -129,7 +129,7 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 
 * We keep Y row of this as history this history provide more information for the RL agent to decide what actions should be taken
 
-* This state_space is defined in ```init()```
+
 
 #### Define Reward
 
