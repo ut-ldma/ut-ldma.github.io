@@ -8,7 +8,7 @@ provide docker images to manage all the dependencies.
 
 To access the ```g5.xlarge``` instance, please use the following google form
 
-[```https://forms.gle/HgXwz4VSSpN7K6Um6```](https://forms.gle/HgXwz4VSSpN7K6Um6)
+[```https://forms.gle/DxKqCCnK2V7SUc4E9```](https://forms.gle/DxKqCCnK2V7SUc4E9)
 
 Once you submit your email, the login method and credentials will be emailed.
 
