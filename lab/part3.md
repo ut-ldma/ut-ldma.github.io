@@ -20,3 +20,19 @@ Second, after we increase the action space size, we still need to decode/parse t
 Finally, even if we know what the action means, we still need to actually invoke proper [cache simulator's API](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py) in the [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204) of the cache environment. This is an coding exercise, please fill in the proper API [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L295).
 
 ### Train the Modified Env to Explore Flush+Reload Attack
+
+Once the flush instruction is included, please use the following command to launch the training.
+
+
+Please use the following to launch the training
+
+```
+(py38) $ python ${REPO_ROOT}/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+```
+
+Once the return is close to 1, please use the following to sample the attack.
+
+```
+(py38) $ python ${REPO_ROOT}/src/rlmeta/sampling_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
+```
+Which it will generate the attack sequence.
