@@ -99,7 +99,8 @@ Use one hot encoding, represented in [here](https://github.com/rl4cas/lab/blob/m
 self.action_space = spaces.Discrete(len(self.attacker_address_space) + 1+len(self.victim_address_space))
 ```
 
-Given an action encoded in ```spaces.Discrete```
+Given an action encoded in [```spaces.Discrete```](https://www.gymlibrary.dev/api/spaces/#discrete), which is a standard gym space definition.
+
 * how to parse the action is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#LL426)
 
 ```
@@ -115,6 +116,8 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 
 
 #### Define State
+
+* The state/observation is defined as an instance of [```spaces.Box```](https://www.gymlibrary.dev/api/spaces/#box).
 
 * The state include is represented as a X times Y matrix
     - Each row is a 4-element tuple
