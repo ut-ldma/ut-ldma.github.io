@@ -73,13 +73,13 @@ The cache guessing game, described above is defined as the follows using the gym
 
 * Gym Environment
     - Define actions
-        - ```action_space```: defined in ```init()```
-        - ```action```: defined in ```step()```
+        - [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172): defined in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L65)
+        - ```action```: defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L204)
     - Define state
-        - ```Observation_space```: defined in ```init()```
-        - ```Observation/state```: defined in ```step()```
+        - [```observation_space```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L185): defined in ```__init()__```
+        - [```observation/state```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L327): defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L204)
     - Define rewards
-        - ```reward``` for different scenario defined in ```step()```
+        - ```reward``` for different scenario defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L204)
 
 We discuss the several parts in detail.
 
