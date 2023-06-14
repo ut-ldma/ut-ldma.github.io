@@ -127,18 +127,18 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
         - ```action``` : the action used 
         - ```steps_count``` : the current steps
 
-* We keep Y row of this as history this history provide more information for the RL agent to decide what actions should be taken
+* We keep a window_size row as history this history provide more information for the RL agent to decide what actions should be taken.
 
 
 
 #### Define Reward
 
 * After each step(), the reward is assigned based on state and action
-    - guess action, guess is correct: a positive reward is assigned
-    - guess action, guess is wrong: a negative reward is assigned
+    - guess action, guess is correct: [a positive reward is assigned](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L273)
+    - guess action, guess is wrong: [a negative reward is assigned](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L280)
     - Not a guess action
-        - Length within the limit: a small negative reward
-        - Length exceeding the limit: a large negative reward
+        - Length within the limit: [a small negative reward](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L292)
+        - Length exceeding the limit: [a large negative reward](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L240)
 
 #### Putting together
 
