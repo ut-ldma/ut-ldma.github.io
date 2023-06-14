@@ -1,6 +1,6 @@
 # RL4CAS Tutorial Lab
 
-This is the index page of the lab session for the [RL4CAS tutoria](https://rl4cas.github.io), focusing on bring in the reinforcement learning to computer architecture and system research. The lab is divided into four parts listed below. Please click on the link for detailed description of each part.
+This is the index page of the lab session for the [RL4CAS tutorial](https://rl4cas.github.io), focusing on bring in the reinforcement learning to computer architecture and system research. The lab is divided into four parts listed below. Please click on the link for detailed description of each part.
 
 [prelab](lab/prelab.md)
 
