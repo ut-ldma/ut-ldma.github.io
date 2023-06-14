@@ -1,4 +1,7 @@
-# rl4cas tutorial
+# RL4CAS Tutorial Lab
+
+This is the index page of the lab session for the [RL4CAS tutoria](https://rl4cas.github.io), focusing on bring in the reinforcement learning to computer architecture and system research
+
 
 [prelab](lab/prelab.md)
 
