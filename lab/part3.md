@@ -33,6 +33,6 @@ Please use the following to launch the training
 Once the return is close to 1, please use the following to sample the attack.
 
 ```
-(py38) $ python ${REPO_ROOT}/src/rlmeta/sampling_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
+(py38) $ python ${REPO_ROOT}/src/rlmeta/sample_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
 ```
 Which it will generate the attack sequence.
