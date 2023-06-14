@@ -69,7 +69,7 @@ Here is a brief summary of the cache guessing game:
 
 ### Cache Guessing Game as Gym Environment
 
-The cache guessing game, described above is defined as the follows using the gym API
+The cache guessing game, described above is defined as the follows using the gym API, the code is located in [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
 
 * Gym Environment
     - Define actions
@@ -157,7 +157,7 @@ Putting together the defined actions, states and reward, we summarize the skelet
     - ```reset()```
         - Reset the cache simulator 
  
- The entire code of the gym environment for cache guessing game is in ```src/cache_guessing_game_env_impl.py```.
+ The entire code of the gym environment for cache guessing game is in [```src/cache_guessing_game_env_impl.py```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
  
 
 
