@@ -27,12 +27,12 @@ Once the flush instruction is included, please use the following command to laun
 Please use the following to launch the training
 
 ```
-(py38) $ python ${REPO_ROOT}/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+(py38) $ python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
 ```
 
 Once the return is close to 1, please use the following to sample the attack.
 
 ```
-(py38) $ python ${REPO_ROOT}/src/rlmeta/sample_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
+(py38) $ python /lab/src/rlmeta/sample_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
 ```
 Which it will generate the attack sequence.
