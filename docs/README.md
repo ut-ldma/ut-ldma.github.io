@@ -12,7 +12,7 @@ First, we will give a general introduction on the foundations of RL, in which we
 **Expected Outcome:** This tutorial will create concrete examples and hands on experience to the audience on how to formulate a computer architecture and system problem as an RL problem, and run RL training. We hope the attendance will proactively use RL in their own research problems after the tutorial.
 
 ## This tutorial
-The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando on  Saturaday, June 17th, 2023, 9am-12:30pm. The speakers include Yuandong Tian, Chris Cummins, Vincent Moens, Mulong Luo and Wenjie Xiong.
+The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf.org/isca2023/) in Orlando on  Saturaday, June 17th, 2023, 9am-12:30pm. We will also enable livestream by Zoom. The speakers include Yuandong Tian, Chris Cummins, Vincent Moens, Mulong Luo and Wenjie Xiong.
 
 | Time  | Topic | Speaker(s) |
 | ------------- | :-------------: | :-------: |
@@ -25,6 +25,10 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | 11:20-12:30a | Lab: hands on with RL for system using TorchRL |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 
 Stay tuned for more information!
+
+## Zoom access ##
+
+The zoom link for the event livestream will be provided here on the day of the tutorial.
 
 ## Contact us
 For any further questions please contact <ml2558@cornell.edu>
