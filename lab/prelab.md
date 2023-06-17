@@ -28,6 +28,15 @@ $ docker run -it --gpus all ml2558/autocat-torchrl:new /bin/bash
 
 After that you will be prompt to a docker shell.
 
+### Activate the conda environment
+
+inside the docker container, set the conda environment variables and activate the py38 environment
+
+```
+# eval "$(/root/miniconda3/bin/conda shell.bash hook)" 
+# conda activate py38
+```
+
 For this lab, we will be using the latest version of torchrl. You can install it via:
 ```
 pip install git+https://github.com/pytorch-labs/tensordict
@@ -39,14 +48,7 @@ pip install tensordict-nightly
 pip install torchrl-nightly
 ```
 
-### Activate the conda environment
 
-inside the docker container, set the conda environment variables and activate the py38 environment
-
-```
-# eval "$(/root/miniconda3/bin/conda shell.bash hook)" 
-# conda activate py38
-```
 
 ### Create an ```wandb``` account for visualizing the training progress.
 
