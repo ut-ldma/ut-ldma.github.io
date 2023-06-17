@@ -34,9 +34,9 @@ Launch the training
 ```
 
 
-### Linux-based CPU
+### x86 CPU with Linux OS without GPU
 
-For X86 machine without CPU, use the following to launch and run 
+For X86 machine without GPU, use the following to launch and run 
 
 ```
 $ docker pull ml2558/autocat-torchrl:new
@@ -67,4 +67,8 @@ Launch the training
 (py38) $ cd lab/src/torchrl
 (py38) $ python train_ppo_attack.py
 ```
+
+### x86 CPU with Nvidia GPU
+
+Please follow the same setting as AWS g5.xlarge.
 
