@@ -28,7 +28,7 @@ Stay tuned for more information!
 
 ## Zoom access ##
 
-The zoom link for the event livestream will be provided here on the day of the tutorial.
+The zoom link for the event livestream will be provided [here](https://cornell.zoom.us/j/99764158640?pwd=Q3VjUFZNWTMwVTdXYUFJbC9tYnRIQT09) on the day of the tutorial.
 
 ## Contact us
 For any further questions please contact <ml2558@cornell.edu>
