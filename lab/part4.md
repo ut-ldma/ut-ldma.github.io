@@ -28,7 +28,7 @@ Go to torchrl directory.
 (py38) $ cd /lab/src/torchrl
 ```
 
-Please use the following to launch the training
+Please use the following to launch the training (```hpca_ae_exp_4_3``` is a configuration that require flush instruction.)
 
 ```
 (py38) $ python /lab/src/torchrl/train_ppo_attack.py env_config=hpca_ae_exp_4_3
