@@ -13,7 +13,7 @@ First, the original [```action_space```](https://github.com/rl4cas/lab/blob/main
 
 ### Modify the Action Parser ```parse_action()``` 
 
-Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#441). Once [```is_flush```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#445).
+Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L441). Once [```is_flush```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L445).
 
 ### Perform the Flush Instruction in ```step()```
 
