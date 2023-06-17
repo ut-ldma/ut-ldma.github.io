@@ -1,5 +1,11 @@
 # Tutorial: (RL4CAS) Reinforcement Learning for Computer Architecture and Systems Research
 
+## Lab access ##
+
+Please use this form to request server access for lab 
+
+[https://forms.gle/xVaQWDtDpwbnEBUY8](https://forms.gle/xVaQWDtDpwbnEBUY8)
+
 ## Abstract
 **Motivation:** Reinforcement learning has been demonstrated as a powerful and promising tool in many scientific and gaming problems. Recently, RL has shown promising results to solve problems in the area of computer architecture and compiler. Nevertheless, the lack of an easily accessible reinforcement learning framework and tutorial has prevented its full potential in solving architectural, security, and optimization problems. 
 
@@ -25,12 +31,6 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | 11:20-12:30a | [Lab: hands on with RL for compArch security](https://github.com/rl4cas/rl4cas.github.io) |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 
 Stay tuned for more information!
-
-## Lab access ##
-
-Please use this form to request server access for lab 
-
-[https://forms.gle/xVaQWDtDpwbnEBUY8](https://forms.gle/xVaQWDtDpwbnEBUY8)
 
 ## Zoom access ##
 
