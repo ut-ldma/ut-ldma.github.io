@@ -1,42 +1,110 @@
-### Flush + Reload Cache Timing Attacks
+### Introduction
 
-The gym environment described in Part 1 does not include the flush instruction in the environment, as a result, it will
-not be able to find flush+reload attacks commonly used. Even though the cache simulator has the interface for flush instruction,
-the gym environment did not expose the flush to the ```action_space()```, in this excercise, we aim at extending the gym environment to incorporate the flush action into the gym environment. We directly modify the [```src/cache_guessing_game_env_impl.py```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
+The lab uses torchRL and open AI gym. The training can be performed on CPU/GPU, however, it is best that the experiments is running on GPU. 
+In order to streamline the setup process and focus on the environment construction and training we have AWS ```g5.xlarge``` instances for use and 
+provide docker images to manage all the dependencies. (If you are unable to connect to the AWS machine, you can try running the training locally following [this instructions](local_inst.md). However, it is suggested that the local machine has CUDA support, otherwise the training could be very slow.)
 
-We use a flag [```flush_inst```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L100) to indicate whether we want to include flush instruction for the attacker, by default it is not enabled.
+### Access the AWS g5.xlarge instance
 
+To access the ```g5.xlarge``` instance, please use the following google form
 
-### Modify the ```action_space``` to Incorporate Flush Action
+[```https://forms.gle/XXXXXXX```](https://forms.gle/XXXXXXX)
 
-First, the original [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
+Once you submit your email, the login method and credentials will be emailed.
 
-### Modify the Action Parser ```parse_action()``` 
+### Launch the docker image
 
-Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#441). Once [```is_flush```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#445).
-
-### Perform the Flush Instruction in ```step()```
-
-Finally, even if we know what the action means, we still need to actually invoke proper [cache simulator's API](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py) in the [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204) of the cache environment. This is an coding exercise, please fill in the proper API [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L295).
-
-### Train the Modified Env to Explore Flush+Reload Attack
-
-Once the flush instruction is included, please use the following command to launch the training.
-
-Go to torchrl directory.
-```
-(py38) $ cd /lab/src/torchrl
-```
-
-Please use the following to launch the training
+Once you log on the AWS instance, please use the following command to pull the docker image 
 
 ```
-(py38) $ python /lab/src/torchrl/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+$ docker pull ml2558/autocat-torchrl:new
 ```
 
-Once the return is close to 1, please use the following to sample the attack.
+Once it is finished, please use the following command to launch the docker image
 
 ```
-(py38) $ /lab/src/torchrl/sampling_trajectories.py --saved_path=saved_ppo_attack-exp0 --num-rollouts=1
+$ docker run -it --gpus all ml2558/autocat-torchrl:new /bin/bash 
 ```
-Which it will generate the attack sequence.
+
+After that you will be prompt to a docker shell.
+
+### Activate the conda environment
+
+inside the docker container, set the conda environment variables and activate the py38 environment
+
+```
+# eval "$(/root/miniconda3/bin/conda shell.bash hook)" 
+# conda activate py38
+```
+
+For this lab, we will be using the latest version of torchrl. You can install it via:
+```
+pip install git+https://github.com/pytorch-labs/tensordict
+pip install git+https://github.com/pytorch/rl
+```
+or
+```
+pip install tensordict-nightly
+pip install torchrl-nightly
+```
+
+
+
+### Create an ```wandb``` account for visualizing the training progress.
+
+```wandb``` is a popular tool for visiualizing machine learning-related data. If you are already have an account you can skip the signup process and get your API key associated with your ```wandb``` account.
+
+Other wise please sign up here [```https://wandb.ai```](https://wandb.ai), or follow the instruction here [```https://docs.wandb.ai/quickstart```](https://docs.wandb.ai/quickstart).
+
+Below we show the Wandb webpage, click on the top right to sign up or sign in.
+<img src="fig/wandb.png" alt="drawing" width="800"/>
+
+
+
+After sign up and log in, click on the top left and find "User Settings".
+
+<img src="fig/wandb_setting.png" alt="drawing" width="800"/>
+
+Inside the profile setting, scroll down and find danger zone, copy the API key and pasted to a note where you can later retrive.
+
+<img src="fig/wandb_key.png" alt="drawing" width="800"/>
+
+
+
+### Clone the code and start the training
+
+Once you have set up the ```wandb``` account, you can clone the code inside the docker shell
+
+```
+# git clone https://github.com/rl4cas/lab
+```
+
+You can test the code here.
+
+```
+# cd lab/src/torchrl
+# python train_ppo_attack.py
+```
+Select (2) when prompted and paste your ```wandb``` API keys.
+
+<img src="fig/wandb_choice.png" alt="drawing" width="600"/>
+
+Then Paste your wandb API keys here.
+
+<img src="fig/paste_api_key.png" alt="drawing" width="600"/>
+
+Your RL training job should be start running.
+
+<img src="fig/running_screen.png" alt="drawing" width="600"/>
+
+After that you can open your browser and go to wandb.ai. Select the running job in the list.
+
+<img src="fig/wandb_runs.png" alt="drawing" width="800"/>
+
+Here the training progress is shown in wandb for this job you just launched.
+
+<img src="fig/wandb_plot.png" alt="drawing" width="800"/>
+
+Which shows the test_reward, test_trajectory length, train_reward, and frames.
+
+
