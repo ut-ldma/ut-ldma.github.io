@@ -16,7 +16,7 @@ These frameworks have their individual strengths. However, for the cache guessin
 Please use the following to launch the training
 
 ```
-(py38) $ python /lab/src/torchrl/train_ppo_attack.py
+(py38) $ python /lab/src/torchrl/train_ppo_attack.py env_config=hpca_ae_exp_4_1
 ```
 
 select (2) when prompted to plot all the training progress in wandb. 
