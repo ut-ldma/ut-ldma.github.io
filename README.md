@@ -7,6 +7,6 @@ This is the index page of the lab session for the [RL4CAS tutorial](https://rl4c
 
 [Part 2: Training the RL agent](lab/part2.md)
 
-[Lab Setup](lab/prelab.md)
+[Part 3: Lab Setup](lab/part3.md)
 
-[Lab Exercise](lab/part3.md)
+[Part 4: Lab Exercise](lab/part4.md)
