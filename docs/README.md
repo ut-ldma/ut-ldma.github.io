@@ -26,6 +26,12 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 
 Stay tuned for more information!
 
+## Lab access ##
+
+Please use this form to request server access for lab 
+
+[https://forms.gle/xVaQWDtDpwbnEBUY8](https://forms.gle/xVaQWDtDpwbnEBUY8)
+
 ## Zoom access ##
 
 The zoom link for the event livestream will be provided [here](https://cornell.zoom.us/j/99764158640?pwd=Q3VjUFZNWTMwVTdXYUFJbC9tYnRIQT09) on the day of the tutorial.
