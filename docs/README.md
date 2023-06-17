@@ -20,7 +20,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | 9:05-9:40a | [Introduction to RL and its applications to systems](https://drive.google.com/file/d/13YTXQyNw2G7Vtz3b43jF9ugP_nXnNT-4/view?usp=share_link) | [Yuandong Tian](https://yuandong-tian.com), Meta AI |
 | 9:40-10:15a | [CompilerGym: RL for compiler optimization](https://drive.google.com/file/d/1hJk1wc6A2rkda3Ztt92rpY0jzwXRGJlb/view?usp=share_link) | [Chris Cummins](https://ai.facebook.com/people/chris-cummins/), Meta AI |
 | 10:15-10:45a | [RL for computer architecture and security](https://drive.google.com/file/d/1FinwdpKCS9oY-3PX38oZ2j1gCjqglX2d/view?usp=share_link)  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech |
-| 10:45-11:00a| [Introduction to TorchRL an RL Library](https://drive.google.com/file/d/1FinwdpKCS9oY-3PX38oZ2j1gCjqglX2d/view?usp=share_link) |[Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
+| 10:45-11:00a| [Introduction to TorchRL, an RL Library](https://drive.google.com/file/d/1FinwdpKCS9oY-3PX38oZ2j1gCjqglX2d/view?usp=share_link) |[Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 | 11:00-11:20a | Coffee Break| |
 | 11:20-12:30a | Lab: hands on with RL for system using TorchRL |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 
