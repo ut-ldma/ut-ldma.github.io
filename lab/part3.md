@@ -23,16 +23,20 @@ Finally, even if we know what the action means, we still need to actually invoke
 
 Once the flush instruction is included, please use the following command to launch the training.
 
+Go to torchrl directory.
+```
+(py38) $ cd /lab/src/torchrl
+```
 
 Please use the following to launch the training
 
 ```
-(py38) $ python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+(py38) $ python /lab/src/torchrl/train_ppo_attack.py env_config=hpca_ae_exp_4_3
 ```
 
 Once the return is close to 1, please use the following to sample the attack.
 
 ```
-(py38) $ python /lab/src/rlmeta/sample_attack.py env_config=hpca_ae_exp_4_3 ${PATH_TO_CHECKPOINT}
+(py38) $ /lab/src/torchrl/sampling_trajectories.py --saved_path=saved_ppo_attack-exp0 --num-rollouts=1
 ```
 Which it will generate the attack sequence.
