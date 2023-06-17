@@ -23,6 +23,15 @@ To install the latest version of TorchRL and tensordict, execute these commands:
 ```
 Checkout ```m1``` branch of ```https://github.com/rl4cas/lab```.
 
+```
+(py38) $ git clone https://github.com/rl4cas/lab -b m1
+```
+
+Launch the training
+```
+(py38) $ cd lab/src/torchrl
+(py38) $ python train_ppo_attack.py
+```
 
 
 ### Linux-based CPU
@@ -48,4 +57,14 @@ To install the latest version of TorchRL and tensordict, execute these commands:
 (py38) $ pip install git+https://github.com/pytorch/rl
 ```
 Checkout ```cpu``` branch of ```https://github.com/rl4cas/lab```.
+
+```
+(py38) $ git clone https://github.com/rl4cas/lab -b cpu
+```
+
+Launch the training
+```
+(py38) $ cd lab/src/torchrl
+(py38) $ python train_ppo_attack.py
+```
 
