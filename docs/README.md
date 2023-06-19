@@ -23,7 +23,7 @@ The inaugural `RL4CAS` tutorial will be held at [ISCA 2023](https://www.iscaconf
 | 10:15-10:45a | RL for computer architecture and security [[slides]](https://drive.google.com/file/d/1FinwdpKCS9oY-3PX38oZ2j1gCjqglX2d/view?usp=share_link)  [[Video]](https://youtu.be/EX2hez37MCg)  | [Wenjie Xiong](https://computing.ece.vt.edu/~wenjiex/), Virginia Tech |
 | 10:45-11:00a| Introduction to TorchRL, an RL Library [[Slides]](https://drive.google.com/file/d/1Nf6CJUiBDyHShc-dNLojrBLfSGAVja5a/view?usp=share_link)  [[Video]](https://youtu.be/1RVXOxNU1oo) |[Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 | 11:00-11:20a | Coffee Break| |
-| 11:20-12:30a | Lab: hands on with RL for compArch security [[Slides]](https://github.com/rl4cas/rl4cas.github.io)[[Video]](https://youtu.be/C-mOlrzRQqU) |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
+| 11:20-12:30a | Lab: hands on with RL for compArch security [[docs]](https://github.com/rl4cas/rl4cas.github.io)[[Video]](https://youtu.be/C-mOlrzRQqU) |   [Mulong Luo](https://mulongluo.me), Cornell and [Vincent Moens](https://www.linkedin.com/in/vincent-moens-9bb91972/?originalSubdomain=uk), Meta AI |
 
 
 ## Contact us
