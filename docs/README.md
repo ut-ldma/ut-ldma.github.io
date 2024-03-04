@@ -2,11 +2,36 @@
 
 ## Abstract
 
-Microarchitectural attacks can steal critical secret information in computer systems without being noticed. Due to their stealthy and evolving nature where new attacks are continuously being found, existing rule-based detection mechanisms fall short of detecting emerging microarchitectural attacks. Recently, the breakthrough in artificial intelligence has demonstrated superhuman performance in detecting microarchitectural attacks.
+**Background:** attacks can steal critical secret information in computer systems without being noticed. Due to their stealthy and evolving nature where new attacks are continuously being found, existing rule-based detection mechanisms fall short of detecting emerging microarchitectural attacks. Recently, the breakthrough in artificial intelligence has demonstrated superhuman performance in detecting microarchitectural attacks.
 
-In this tutorial, we aim to systematically introduce machine learning-based microarchitectural attack detection to computer architecture and system researchers. We will first give a general introduction about the microarchitecture attacks, followed by an overview of the machine learning methods typically used for attack detection. Then, we will introduce the current hardware architectures used for ML-based microarchitecture detection. We will also provide a platform for experimenting with ML-based detection algorithms for microarchitectural attacks. With this platform, in the last section, we hold a contest on ML-based microarchitectural attack detection, where the attendees can design and submit their own customized ML algorithm to detect as many attacks as possible. 
+**This tutorial:** we aim to systematically introduce machine learning-based microarchitectural attack detection to computer architecture and system researchers. We will first give a general introduction about the microarchitecture attacks, followed by an overview of the machine learning methods typically used for attack detection. Then, we will introduce the current hardware architectures used for ML-based microarchitecture detection. We will also provide a platform for experimenting with ML-based detection algorithms for microarchitectural attacks. With this platform, in the last section, we hold a contest on ML-based microarchitectural attack detection, where the attendees can design and submit their own customized ML algorithm to detect as many attacks as possible. 
+
+**Target audience:** The target audience include but not limited to system and architectural security researchers (attending ASPLOS) who are interested in machine learning methods and their applications in architecture and system security, applied machine learning researchers who are exploring new applications of machine learning in system and computer architecture security.
+
+## This tutorial
+
+This tutorial will be held at ASPLOS 2024 in San Diego on Sunday, April 28th, 2024, 1pm-5pm. We will algo enable livestream by Zoom.
+
+### Topics to be Covered
+
+* Microarchitecture attacks including cache side channel attacks
+* Machine learning-based attack detection algorithms
+* Detection frameworks for microarchitecture attacks
+
+### Tentative Schedule
+
+| Time  | Topic | 
+| ------------- | :-------------: | 
+|1:00pm-1:40pm|Microarchitecture attacks and defenses|
+|1:50pm-2:30pm|Short course on supervised machine learning and reinforcement learning|
+|2:40pm-3:30pm|Machine learning-based microarchitecture attack detection architecture and algorithms|
+|3:40pm-4:30pm|Mini-contest on machine learning-based microarchitecture attack detection|
 
 ## Contact us
-For any further questions please contact <mulong@utexas.edu>
+For any further questions please contact [Dr. Mulong Luo](https://mulongluo.me) at <mulong@utexas.edu>. 
+
+## Organizer
+
+[SPARK Lab at the University of Austin](https://spark.ece.utexas.edu).
 
 
