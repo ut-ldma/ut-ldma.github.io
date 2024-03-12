@@ -22,10 +22,11 @@ This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/as
 
 | Time  | Topic | 
 | ------------- | :-------------: | 
-|1:00pm-1:40pm|Microarchitecture attacks and defenses|
-|1:50pm-2:30pm|Short course on supervised machine learning and reinforcement learning|
-|2:40pm-3:30pm|Machine learning-based microarchitecture attack detection architecture and algorithms|
-|3:40pm-4:30pm|Mini-contest on machine learning-based microarchitecture attack detection|
+|1:30pm-2:10pm|Microarchitecture attacks and defenses|
+|2:20pm-3:00pm|Short course on supervised machine learning and reinforcement learning|
+|3:00pm-3:30pm|Coffee break|
+|3:30pm-4:20pm|Machine learning-based microarchitecture attack detection architecture and algorithms|
+|4:30pm-5:30pm|Mini-contest on machine learning-based microarchitecture attack detection|
 
 ## Contact us
 For any further questions please contact [Dr. Mulong Luo](https://mulongluo.me) at <mulong@utexas.edu>. 
