@@ -4,13 +4,13 @@
 
 **Background:** attacks can steal critical secret information in computer systems without being noticed. Due to their stealthy and evolving nature where new attacks are continuously being found, existing rule-based detection mechanisms fall short of detecting emerging microarchitectural attacks. Recently, the breakthrough in artificial intelligence has demonstrated superhuman performance in detecting microarchitectural attacks.
 
-**This tutorial:** we aim to systematically introduce machine learning-based microarchitectural attack detection to computer architecture and system researchers. We will first give a general introduction about the microarchitecture attacks, followed by an overview of the machine learning methods typically used for attack detection. Then, we will introduce the current hardware architectures used for ML-based microarchitecture detection. We will also provide a platform for experimenting with ML-based detection algorithms for microarchitectural attacks. With this platform, in the last section, we hold a lab on ML-based microarchitectural attack detection, where the attendees can design and submit their own customized ML algorithm to detect as many attacks as possible. 
+**This tutorial:** we aim to systematically introduce machine learning-based microarchitectural attack detection to computer architecture and system researchers. We will first give a general introduction about the microarchitecture attacks, followed by an overview of the machine learning methods typically used for attack detection. Then, we will introduce the current hardware architectures used for ML-based microarchitecture detection. We will also provide a lab for experimenting with ML-based detection algorithms for microarchitectural attacks.  
 
 **Target audience:** The target audience include but not limited to system and architectural security researchers (attending ASPLOS) who are interested in machine learning methods and their applications in architecture and system security, applied machine learning researchers who are exploring new applications of machine learning in system and computer architecture security.
 
 ## This tutorial
 
-This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/asplos2024/) in San Diego on Sunday, April 28th, 2024, 1pm-5pm. We will algo enable livestream by Zoom.
+This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/asplos2024/) in San Diego on Sunday, April 28th, 2024, 1:30pm-5pm. We will algo enable livestream by Zoom.
 
 ### Topics to be Covered
 
