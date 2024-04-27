@@ -41,4 +41,4 @@ For any further questions please contact [Dr. Mulong Luo](https://mulongluo.me) 
 
 
 
- <img src="imgs/ut_austin.png" width=100 align=left>
+ <img src="imgs/ut_austin.png" width=300 align=right>
