@@ -6,11 +6,8 @@ provide docker images to manage all the dependencies. (If you are unable to conn
 
 ### Access the AWS g5.xlarge instance
 
-To access the ```g5.xlarge``` instance, please use the following google form
-
-[https://forms.gle/xVaQWDtDpwbnEBUY8](https://forms.gle/xVaQWDtDpwbnEBUY8)
-
-Once you submit your email, the login method and credentials will be emailed.
+We provide limited number of AWS instances for experiments.
+The credentials are handed out during the tutorial.
 
 ### Launch the docker image
 

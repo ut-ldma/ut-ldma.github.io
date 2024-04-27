@@ -25,7 +25,7 @@ Once the flush instruction is included, please use the following command to laun
 
 Go to torchrl directory.
 ```
-(py38) $ cd /lab/src/torchrl
+(py38) $ cd /lab/src/rlmeta
 ```
 
 Please use the following to launch the training (```hpca_ae_exp_4_3``` is a configuration that require flush instruction.)
