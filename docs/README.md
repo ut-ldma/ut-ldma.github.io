@@ -26,13 +26,19 @@ This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/as
 |2:20pm-3:00pm|Short course on supervised machine learning and reinforcement learning|
 |3:00pm-3:30pm|Coffee break|
 |3:30pm-4:00pm|Machine learning-based microarchitecture attack detection architecture and algorithms|
-|4:10pm-5:00pm|Mini-lab on machine learning-based microarchitecture attack detection|
+|4:10pm-5:00pm|Mini-lab on reinforcement learning-based microarchitecture attack detection|
 
 ## Contact us
 For any further questions please contact [Dr. Mulong Luo](https://mulongluo.me) at <mulong@utexas.edu>. 
 
 ## Organizer
 
-[SPARK Lab at the University of Austin](https://spark.ece.utexas.edu).
+|  |  Organizer |
+| ------------- | :------------- |
+| <img src="imgs/mulong.jpeg" width=1500 align=right> |**Mulong Luo** is currently a postdoctoral researcher at the University of Texas at Austin. His research interests are in computer architecture, side channel, and machine learning. He is selected as CPS rising star 2023. His work has been shortlisted for Top Picks in Hardware and Embedded Security, and he has also won best paper award at CPS-SPC workshop. He got his Ph.D. from Cornell University in 2023.|
+|<img src="imgs/ayush.png" width=1500 align=right>|**Ayush RoyChowdhury** is currently a senior undergrad at the Chandra Department of Electrical and Computer Engineering at the University of Texas Austin. His research interests include language model security, data security, and explainable artificial intelligence for security. |
+| <img src="imgs/ayush.png" width=1500 align=right> | **Mohit Tiwari** is an associate professor and he directs the SPARK lab at the University of Texas at Austin. His current research focuses on building secure systems, all the way from hardware to system software to applications that run on them. Prof. Tiwari received a PhD from UC Santa Barbara (2011) and was a post-doctoral fellow at UC Berkeley (2011-13) before joining UT.|
+
+
 
 
