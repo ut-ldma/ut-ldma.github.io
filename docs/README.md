@@ -26,7 +26,7 @@ This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/as
 |2:20pm-3:00pm|Short course on supervised machine learning and reinforcement learning|
 |3:00pm-3:30pm|Coffee break|
 |3:30pm-4:00pm|Machine learning-based microarchitecture attack detection architecture and algorithms|
-|4:10pm-5:00pm|Mini-lab on reinforcement learning-based microarchitecture attack detection|
+|4:10pm-5:00pm|Mini-lab on reinforcement learning-based microarchitecture attack detection [[docs]](https://github.com/rl4cas/ut-ldma.github.io)|
 
 ## Contact us
 For any further questions please contact [Dr. Mulong Luo](https://mulongluo.me) at <mulong@utexas.edu>. 
