@@ -10,7 +10,7 @@
 
 ## This tutorial
 
-This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/asplos2024/) in San Diego on Sunday, April 28th, 2024, 1:30pm-5pm. We will also enable livestream by [Zoom](https://utexas.zoom.us/j/99882862923).
+This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/asplos2024/) in San Diego on Sunday, April 28th, 2024, 1:30pm-5pm at the Hilton La Jolla Torrey Pines. We will also enable livestream by [Zoom](https://utexas.zoom.us/j/99882862923).
 
 ### Topics to be Covered
 
