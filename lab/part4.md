@@ -47,7 +47,7 @@ Finally, even if we know what the action means, we still need to actually invoke
 
 Once the flush instruction is included, please use the following command to launch the training.
 
-Go to torchrl directory.
+Go to rlmeta directory.
 ```
 cd /lab/src/rlmeta
 ```
