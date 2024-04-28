@@ -27,7 +27,7 @@ After that you will be prompt to a docker shell.
 
 ### Activate the conda environment
 
-inside the docker container, set the conda environment variables and activate the py38 environment
+Inside the docker container, set the conda environment variables and activate the py38 environment
 
 ```
 eval "$(/root/miniconda3/bin/conda shell.bash hook)" 
