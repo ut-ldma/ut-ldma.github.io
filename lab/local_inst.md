@@ -5,8 +5,8 @@
 For Apple m series chip use the following to launch and run (note the autocat-rlmeta:apple-m1 image supports rlmeta)
 
 ```
-docker pull ml2558/autocat-rlmeta:apple-m1
-docker run -it ml2558/autocat-rlmeta:apple-m1 /bin/bash
+docker pull ml2558/autocat-torchrl:apple-m1
+docker run -it ml2558/autocat-torchrl:apple-m1 /bin/bash
 ```
 Inside the docker containeer, set the conda environment variables and activate py39 environment.
 
