@@ -38,6 +38,13 @@ eval "$(/root/miniconda3/bin/conda shell.bash hook)"
 conda activate py38
 ```
 
+Modify the train_device and infer device at ```AutoCAT/src/rlmeta/configs/ppo_attack.yaml``` Line 9-10 from ```cuda:0``` to ```cpu```.
+
+```
+train_device: "cpu"
+infer_device: "cpu"
+```
+
 Launch the training
 
 ```
