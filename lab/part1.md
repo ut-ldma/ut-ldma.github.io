@@ -30,11 +30,11 @@ Below is a brief summary of the gym API:
 
 ### Cache Simulator Interface
 
-The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attacks. The cache simulator (in [```src/cache.py```](https://github.com/rl4cas/lab/blob/main/src/cache.py) ) implements the basic functions that are representative of a real-world cache. These include
+The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attacks. The cache simulator (in [```src/cache.py```](https://github.com/ut-ldma/lab/blob/main/src/cache.py) ) implements the basic functions that are representative of a real-world cache. These include
 
 ```init()```, ```read()```, ```write()```, ```clflush()``` and ```parse_address()```, these functions are defined accordingly.
 
-[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L11): instantiate and initialize the cache simulator class. 
+[```__init()__```](https://github.com/ut-ldma/lab/blob/main/src/cache.py?plain=1#L11): instantiate and initialize the cache simulator class. 
 
 ## `__init__` Method Summary
 
@@ -65,7 +65,7 @@ This `__init__` method initializes an instance of a cache simulator class, setti
 This method is critical as it not only configures the cache parameters but also establishes the foundational data structures and policies necessary for its operation.
 
 
-[```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L96): perform a reading operation through the cache interface
+[```read()```](https://github.com/ut-ldma/lab/blob/main/src/cache.py?plain=1#L96): perform a reading operation through the cache interface
 
 ## `read` Method Summary
 
@@ -110,9 +110,9 @@ This method is crucial for simulating realistic cache operations, including read
 
 
 
-[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L172): usually used to perform a write operation through the cache interface. The write method is not needed in our lab, and thus not implemented.
+[```write()```](https://github.com/ut-ldma/lab/blob/main/src/cache.py?plain=1#L172): usually used to perform a write operation through the cache interface. The write method is not needed in our lab, and thus not implemented.
 
-[```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L69): flush a specific address from the cache hierachy
+[```clflush()```](https://github.com/ut-ldma/lab/blob/main/src/cache.py?plain=1#L69): flush a specific address from the cache hierachy
 
 ## `clflush` Method Summary
 
@@ -149,7 +149,7 @@ This method is essential for maintaining cache coherence and security in simulat
 
 
 
-[```_parse_address()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L175): Parse the address into block, tag, offset
+[```_parse_address()```](https://github.com/ut-ldma/lab/blob/main/src/cache.py?plain=1#L175): Parse the address into block, tag, offset
 
 ## `_parse_address` Method Summary
 
@@ -214,17 +214,17 @@ Here is a brief summary of the cache guessing game:
 
 ### Cache Guessing Game as Gym Environment
 
-The cache guessing game, described above is defined as the follows using the gym API, the code is located in [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
+The cache guessing game, described above is defined as the follows using the gym API, the code is located in [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py).
 
 * Gym Environment
     - Define actions
-        - [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172): defined in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
-        - ```action```: defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
+        - [```action_space```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172): defined in [```__init()__```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
+        - ```action```: defined in [```step()```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
     - Define state
-        - [```observation_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185): defined in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
-        - [```observation/state```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L327): defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
+        - [```observation_space```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185): defined in [```__init()__```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
+        - [```observation/state```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L327): defined in [```step()```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
     - Define rewards
-        - ```reward``` for different scenario defined in [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
+        - ```reward``` for different scenario defined in [```step()```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204)
 
 We discuss the several parts in detail.
 
@@ -238,7 +238,7 @@ As described, there are three types of actions, listed below (assume there are N
 
 There are ```N (different possible addresses to guess) + M (different possible secrets to guess) + 1 (wait and allow victim)``` actions 
 
-Use one hot encoding, represented in [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172)
+Use one hot encoding, represented in [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172)
 
 ```
 self.action_space = spaces.Discrete(len(self.attacker_address_space) + 1+len(self.victim_address_space))
@@ -246,7 +246,7 @@ self.action_space = spaces.Discrete(len(self.attacker_address_space) + 1+len(sel
 
 Given an action encoded in [```spaces.Discrete```](https://www.gymlibrary.dev/api/spaces/#discrete), which is a standard gym space definition.
 
-* how to parse the action is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#LL426)
+* how to parse the action is defined [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#LL426)
 
 ```
 def parse_action(self, action):
@@ -255,16 +255,16 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 ```
 
 * how to interact with the cache simulator l1 to update the simulator state:
-    - Guess action : no update to l1, but check the [correctness of guess](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L260)
-    - Read action : [```l1.read(adress)```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L283)
-    - Wait and allow victim access action : [```l1.read(victim_address)```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L249)
+    - Guess action : no update to l1, but check the [correctness of guess](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L260)
+    - Read action : [```l1.read(adress)```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L283)
+    - Wait and allow victim access action : [```l1.read(victim_address)```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L249)
 
 
 #### Define State
 
-* The state/observation is defined as an instance of [```spaces.Box```](https://www.gymlibrary.dev/api/spaces/#box), which is instantiated [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185) in [```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
+* The state/observation is defined as an instance of [```spaces.Box```](https://www.gymlibrary.dev/api/spaces/#box), which is instantiated [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L185) in [```__init()__```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L65)
 
-* The state include is represented as a X-by-4 matrix, where X is the length of the history window defined [window_size](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L147) 
+* The state include is represented as a X-by-4 matrix, where X is the length of the history window defined [window_size](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L147) 
     - Each row is a 4-element tuple
         - ```[latency, victim_accessed, action, steps_count]```
         - ```latency``` : 0 hit , 1 miss , 2 NA
@@ -279,11 +279,11 @@ return [ address, is_guess, is_victim, is_flush, victim_addr ]
 #### Define Reward
 
 * After each step(), the reward is assigned based on state and action
-    - guess action, guess is correct: [a positive reward is assigned](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L273)
-    - guess action, guess is wrong: [a negative reward is assigned](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L280)
+    - guess action, guess is correct: [a positive reward is assigned](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L273)
+    - guess action, guess is wrong: [a negative reward is assigned](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L280)
     - Not a guess action
-        - Length within the limit: [a small negative reward](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L292)
-        - Length exceeding the limit: [a large negative reward](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L240)
+        - Length within the limit: [a small negative reward](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L292)
+        - Length exceeding the limit: [a large negative reward](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L240)
 
 #### Putting together
 
@@ -302,7 +302,7 @@ Putting together the defined actions, states and reward, we summarize the skelet
     - ```reset()```
         - Reset the cache simulator 
  
- The entire code of the gym environment for cache guessing game is in [```src/cache_guessing_game_env_impl.py```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
+ The entire code of the gym environment for cache guessing game is in [```src/cache_guessing_game_env_impl.py```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py).
  
 
 
