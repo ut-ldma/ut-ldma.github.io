@@ -1,3 +1,6 @@
+### Prerequisites
+
+Before beggining this portion it is important to have a wandb account. Use [this link](https://docs.wandb.ai/quickstart), to set one up. 
 ### Training the gym environment using an RL framework (TorchRL)
 
 Now that we have shown how an gym environment is constructed, we need to train an RL agent to interact with the environment. There are many existing RL frameworks that are compatible with the standard gym environment, here are some notable examples:
