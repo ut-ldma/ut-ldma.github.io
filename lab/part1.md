@@ -9,12 +9,12 @@ We explain how the gym environment is constructed for reinforcement learning.
 Below is a brief summary of the gym API:
 
 * ```__init()__```
-    - ```observation_space```:
+    - ```observation_space```: the observation space is defined here
     - ```action_space```: the action space is defined here
 
 * ```step(action) --> state, reward, done, info```
     - ```action```: How to perform the action is defined here
-    - ```state```: What the agent is observed is defined here
+    - ```state```: What the agent observed is defined here
     - ```reward```: Reward is defined here
 
 * ```reset()```
