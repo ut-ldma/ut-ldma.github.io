@@ -74,7 +74,7 @@ The `read` method simulates reading from a cache line within a cache hierarchy, 
 ### Overview
 - **Parameters**:
   - `address`: The memory address to read from.
-  - `current_step`: The current step or time in the simulation, used for tracking when actions occur, essential for policies like LRU that depend on the order of operations.
+  - `current_step`: The current step used for tracking when actions occur, essential for policies like LRU that depend on the order of operations.
 
 - **Return Values**:
   - `r`: A `Response` object indicating the result of the read operation, including whether it was a hit and the time taken.
