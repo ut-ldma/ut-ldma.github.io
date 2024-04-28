@@ -78,5 +78,5 @@ Which it will generate the attack sequence.
 
 ### Going Further
 
-If you want to explore more in this area, feel free to use ```hpca_ae_exp_4_1``` for Prime Probe Attack Configuration and continue with  ```hpca_ae_exp_4_3``` for Flush Reload Attack Configuration for better results! 
+If you want to explore more in this area, feel free to use ```hpca_ae_exp_4_1``` for Prime Probe Attack Configuration, referring to [```Part 2```](https://github.com/ut-ldma/ut-ldma.github.io/blob/main/lab/part2.md) for specific instructions. and continue with  ```hpca_ae_exp_4_3``` for Flush Reload Attack Configuration for better results! 
 
