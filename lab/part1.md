@@ -9,8 +9,17 @@ We explain how the gym environment is constructed for a reinforcement learning a
 Below is a brief summary of the gym API:
 
 * ```__init()__```
-    - ```observation_space```: the observation space is defined here
-    - ```action_space```: the action space is defined here
+    - ```observation_space```: the observation space is defined here, the observation space is ...
+  
+      Cache Hit/Miss Information: Indicating whether each action resulted in a cache hit or miss.
+      Latency Measurements: The time taken for each cache operation, which can provide insights into whether data was fetched from the cache or main memory.
+      State of Cache Lines: Information about which data or tags are currently stored in specific cache lines, potentially represented in a structured format like a vector or matrix.
+     
+    - ```action_space```: the action space is defined here, the action space is ...
+    - Read: Accessing a specific cache line to read data.
+Write: Writing data to a specific cache line.
+Flush (clflush): Flushing a specific cache line, which is commonly used in cache attack scenarios to manipulate or infer the state of the cache.
+Guess: An action where the agent attempts to guess secret data based on observed cache behavior (more relevant in an adversarial scenario like a cache timing attack). 
 
 * ```step(action) --> state, reward, done, info```
     - ```action```: How to perform the action is defined here
@@ -59,11 +68,122 @@ This method is critical as it not only configures the cache parameters but also 
 
 [```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L96): perform a reading operation through the cache interface
 
+## `read` Method Summary
+
+The `read` method simulates reading from a cache line within a cache hierarchy, handling both cache hits and misses, and managing cache evictions when necessary.
+
+### Overview
+- **Parameters**:
+  - `address`: The memory address to read from.
+  - `current_step`: The current step or time in the simulation, used for managing recency in policies like LRU.
+
+- **Return Values**:
+  - `r`: A `Response` object indicating the result of the read operation, including whether it was a hit and the time taken.
+  - `evict_addr`: The address of any evicted block, if applicable.
+
+### Process Details
+1. **Check Level**:
+   - Directly returns a hit if the cache level is main memory, as main memory is assumed to always hit.
+
+2. **Address Parsing**:
+   - Decomposes the input `address` into `block_offset`, `index`, and `tag` components for internal cache indexing.
+
+3. **Cache Lookup**:
+   - Checks if the tag is present in the cache set. If found, it's a hit:
+     - Updates the access time for the cache block.
+     - Adjusts the position or status of the block within the replacement policy.
+
+4. **Handling Misses**:
+   - If the tag is not found (a miss), it performs a read from the next lower memory level.
+   - Adds the read time of the next level and current level's write time to the response.
+
+5. **Cache Update on Miss**:
+   - Checks for free space in the set to add the new block.
+   - If no space is available, identifies a victim block using the replacement policy, potentially evicts it, and then adds the new block.
+   - Manages dirty blocks by writing back to the next level if using a write-back policy.
+
+6. **Eviction Details**:
+   - Constructs the eviction address by combining the victim tag and block offset.
+   - Updates the replacement policy to reflect the eviction and new block addition.
+
+### Usage
+This method is crucial for simulating realistic cache operations, including reads that might result in cascading reads from lower memory levels depending on the cache hierarchy and policies in place.
+
+
+
 [```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L172): perform a write operation through the cache interface
+
+### Overview
+The write method is not needed in our lab, and thus not implemented.
 
 [```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L69): flush a specific address from the cache hierachy
 
+## `clflush` Method Summary
+
+The `clflush` method simulates the flushing of a cache line from the cache hierarchy. This operation is common in scenarios where explicit control over data in the cache is needed, often for security or consistency reasons.
+
+### Overview
+- **Parameters**:
+  - `address`: The memory address of the cache line to flush.
+  - `current_step`: The current step or time in the simulation, used for tracking when the flush occurs.
+
+- **Return Values**:
+  - `r`: A `Response` object indicating that the flush operation was successful, along with the time taken to perform the flush.
+
+### Process Details
+1. **Address Parsing**:
+   - Decomposes the input `address` into `block_offset`, `index`, and `tag` components for locating the specific cache line within the cache.
+
+2. **Cache Line Identification**:
+   - Identifies if the tag associated with the address is present in the cache. If so, it proceeds to flush the cache line.
+
+3. **Cache Line Flushing**:
+   - If the cache line is found (tag exists in the cache set), it removes the tag and resets the corresponding block:
+     - Sets the tag to `INVALID_TAG`.
+     - Resets the block data, effectively clearing it from the cache.
+
+4. **Policy Update**:
+   - Updates the replacement policy to mark the cache line as invalidated, ensuring that it no longer influences cache behavior.
+
+5. **Recursive Flushing**:
+   - If the cache is part of a hierarchy with multiple levels and the next level is not main memory, it recursively flushes the same address from the next level of the cache. This ensures that all instances of the data across the cache hierarchy are flushed.
+
+### Usage
+This method is essential for maintaining cache coherence and security in simulations that involve complex cache hierarchies. It allows the simulation to mimic the behavior of actual hardware operations where certain data must be explicitly cleared from the cache.
+
+
+
 [```_parse_address()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L175): Parse the address into block, tag, offset
+
+## `_parse_address` Method Summary
+
+The `_parse_address` method is a utility function used to decompose a memory address into its constituent parts based on the cache's configuration. This decomposition is essential for locating the appropriate cache line and set within the cache.
+
+### Overview
+- **Parameter**:
+  - `address`: The memory address in hexadecimal format that needs to be parsed.
+
+- **Return Values**:
+  - `block_offset`: The offset within a block where the data is stored.
+  - `index`: The index of the set within the cache where the data might reside.
+  - `tag`: The tag used to verify whether the correct data is in the specified cache line.
+
+### Process Details
+1. **Address Conversion**:
+   - Converts the hexadecimal address into a binary string to facilitate bit-level manipulation.
+
+2. **Component Extraction**:
+   - **Block Offset**: Extracts the block offset from the least significant bits of the binary address, determined by `block_offset_size`.
+   - **Index**: Extracts the set index from the next set of bits above the block offset, determined by `index_size`.
+   - **Tag**: The remaining bits form the tag, which is used to uniquely identify a block of data within a set.
+
+3. **Edge Cases**:
+   - Handles special cases where the block offset or index sizes are zero, which could occur in configurations with only one block or one set.
+
+### Usage
+This method is critical for the cache's operation as it allows the simulator to determine where in the cache a particular piece of data should be read from or written to. Properly parsing addresses ensures that the cache simulator can accurately mimic the behavior of a real cache memory system.
+
+
 
 ### Learn to play the guessing game
 
