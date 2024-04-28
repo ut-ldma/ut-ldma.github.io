@@ -35,7 +35,7 @@ conda activate py38
 ```
 
 ```
-cd lab/src/rlmeta
+cd AutoCAT/src/rlmeta
 python train_ppo_attack.py table_view=true
 ```
 
