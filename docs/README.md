@@ -18,6 +18,10 @@ This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/as
 * Machine learning-based attack detection algorithms
 * Detection frameworks for microarchitecture attacks
 
+### Link to Slides
+
+Here is a [link](https://docs.google.com/presentation/d/1jiOZLqr7L_9cJaZRdjn5jkFXmIj_mCmDieEEXjWrgZ4/edit?usp=sharing) to the slides for preview of tutorial. 
+
 ### Tentative Schedule
 
 | Time  | Topic | 
