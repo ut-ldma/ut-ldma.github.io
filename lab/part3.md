@@ -28,7 +28,7 @@ After that you will be prompt to a docker shell.
 Before you continue there are two important things to do. First, you must install nano.
 
 ```
-apt-get install nano
+apt-get install nano -y
 ```
 Second, you must clone the lab repo. 
 
