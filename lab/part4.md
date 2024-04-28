@@ -26,11 +26,11 @@ The Flush+Reload technique is a side-channel attack that exploits shared cache m
 
 
 
-<img src="fig/flushandreload_new.png" width=1500 align=right style="display: block; margin-bottom: 20px;">
+<div align="center">
+  <img src="fig/flushandreload_new.png" width="1500" alt="Flush and Reload Illustration">
+</div>
 
-###
-###
-###
+
 ### Modify the ```action_space``` to Incorporate Flush Action
 
 First, the original [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
