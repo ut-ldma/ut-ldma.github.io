@@ -39,3 +39,5 @@ cd AutoCAT/src/rlmeta
 python train_ppo_attack.py table_view=true
 ```
 
+Be sure to observe the return (return for training, episode_return for testing) for each epoch. This is the reward for each epoch, and while it starts off low, it should be getting higher after a couple of epochs, converging close to 1. 
+
