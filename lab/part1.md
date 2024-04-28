@@ -1,6 +1,6 @@
 ## Part 1: The Gym Enviornment 
 
-We explain how the gym environment is constructed for reinforcement learning.
+We explain how the gym environment is constructed for a reinforcement learning approach to cache timing attacks. 
 
 ### Gym environment 
 
@@ -26,7 +26,36 @@ The main focus of the environment used is a cache simulator, which forms the bac
 
 ```init()```, ```read()```, ```write()```, ```clflush()``` and ```parse_address()```, these functions are defined accordingly.
 
-[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L11): instantiate and initialize the cache simulator class
+[```__init()__```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L11): instantiate and initialize the cache simulator class. 
+
+## `__init__` Method Summary
+
+This `__init__` method initializes an instance of a cache simulator class, setting up the cache with the necessary configurations and structures for operation. Here are the detailed components and functionalities:
+
+### Configuration Parameters
+- **General Settings**: Configures cache parameters such as name, word size, block size, number of blocks, associativity, hit time, and write time.
+- **Write Policy**: Determines if the cache uses a write-back policy.
+- **Logging**: Sets up logging capabilities and verbosity for detailed output.
+
+### Replacement Policy Setup
+- **Default Policy**: Defaults to an LRU (Least Recently Used) policy.
+- **Policy Configuration**: Logs messages about the replacement policy setup based on the cache's name and the provided policy argument.
+
+### Cache Structure Initialization
+- **Number of Sets**: Calculates the total number of sets in the cache based on the number of blocks and their associativity.
+- **Data Structures**: Initializes the `data` dictionary and `set` dictionary to hold the cache data and metadata.
+
+### Memory Address Calculation
+- **Address Components**: Calculates the sizes for the block offset and cache index, essential for decoding binary memory addresses into cache-friendly components (block offset, index, tag).
+
+### Cache Data Initialization
+- **Data Setup**: If a next-level cache or memory layer is specified, initializes each set in the cache with empty blocks and configures the replacement policy for each set.
+
+### Logging and Debugging
+- **Verbose Output**: Contains provisions for verbose output through the logger, enabling detailed runtime information about cache operations and configuration.
+
+This method is critical as it not only configures the cache parameters but also establishes the foundational data structures and policies necessary for its operation.
+
 
 [```read()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L96): perform a reading operation through the cache interface
 
@@ -91,7 +120,7 @@ As described, there are three types of actions, listed below (assume there are N
     - Wait and allow victim access the secret: one action
     - Guess the secret: there are M actions
 
-There are ```N + M + 1``` actions 
+There are ```N (different possible addresses to guess) + M (different possible secrets to guess) + 1 (wait and allow victim)``` actions 
 
 Use one hot encoding, represented in [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L172)
 
