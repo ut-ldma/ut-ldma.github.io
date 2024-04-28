@@ -33,11 +33,11 @@ The Flush+Reload technique is a side-channel attack that exploits shared cache m
 
 ### Modify the ```action_space``` to Incorporate Flush Action
 
-First, the original [```action_space```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
+First, the original [```action_space```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined and done for you [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
 
 ### Modify the Action Parser ```parse_action()``` 
 
-Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L441). Once [```is_flush```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L445).
+Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined and done for you [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L441). Once [```is_flush```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L445).
 
 ### Perform the Flush Instruction in ```step()```
 
