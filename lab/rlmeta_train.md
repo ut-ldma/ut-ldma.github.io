@@ -1,6 +1,6 @@
 ### Train the RL agent using RLMeta
 
-```src/rlmeta/train_ppo_attack.py``` is the script for training. The default configuration for training is specified in ```src/rlmeta/config/ppo_attack.yml```. The environment configuration is specified in ```src/torchrl/config/env_config/``` and the model configuration of the policy net is specified in 
+```src/rlmeta/train_ppo_attack.py``` is the script for training. The default configuration for training is specified in ```src/rlmeta/config/ppo_attack.yml```. The environment configuration is specified in ```src/rlmeta/config/env_config/``` and the model configuration of the policy net is specified in 
 ```src/rlmeta/config/model_config/```.
 
 RLMeta script assumes ```gym==0.26```, please update the gym version in the ```py38``` conda env.
