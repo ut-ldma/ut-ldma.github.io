@@ -75,3 +75,8 @@ Then run,
 python /lab/src/rlmeta/sample_attack.py
 ```
 Which it will generate the attack sequence.
+
+### Going Further
+
+If you want to explore more in this area, feel free to use ```hpca_ae_exp_4_1``` for Prime Probe Attack Configuration and continue with  ```hpca_ae_exp_4_3``` for Flush Reload Attack Configuration for better results! 
+
