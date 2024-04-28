@@ -29,7 +29,7 @@ git clone https://github.com/rl4cas/lab -b m1
 
 Launch the training
 ```
-cd lab/src/torchrl
+cd AutoCAT/src/torchrl
 python train_ppo_attack.py
 ```
 
@@ -64,7 +64,7 @@ git clone https://github.com/rl4cas/lab -b cpu
 
 Launch the training
 ```
-cd lab/src/torchrl
+cd AutoCAT/src/torchrl
 python train_ppo_attack.py
 ```
 
