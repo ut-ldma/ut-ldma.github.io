@@ -70,6 +70,6 @@ Add checkpoint by going to /lab/src/rlmeta/outputs/<day>/<UTC-timestamp>/<most-r
 Then run, 
 
 ```
-python /lab/src/rlmeta/sampling_attack.py
+python /lab/src/rlmeta/sample_attack.py
 ```
 Which it will generate the attack sequence.
