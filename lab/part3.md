@@ -136,4 +136,4 @@ E Epoch 1              time  186.58510643   0.00000000  186.58510643  186.585106
 
 Be sure to observe the return (episode_return for training (T), episode_return for evaluation (E)) for each epoch. This is the reward for each epoch for training and evaluation, and while it starts off low, it should be getting higher after a couple of epochs, converging close to 1. 
 
-###NOTE:### Please be sure to hit CTRL^C to interrupt the training process, otherwise it will run indefinetely. Throughout the training process there are logs and checkpoints which we will show you how to access in part4.md. 
+### NOTE: ### Please be sure to hit CTRL^C to interrupt the training process, otherwise it will run indefinetely. Throughout the training process there are logs and checkpoints which we will show you how to access in part4.md. 
