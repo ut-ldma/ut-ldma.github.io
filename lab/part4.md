@@ -27,7 +27,7 @@ The Flush+Reload technique is a side-channel attack that exploits shared cache m
 
 
 <div align="center">
-  <img src="fig/flushandreload_new.png" width="1500" alt="Flush and Reload Illustration">
+  <img src="fig/flushandreload_almostperfect.png" width="1500" alt="Flush and Reload Illustration">
 </div>
 
 
