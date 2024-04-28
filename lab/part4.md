@@ -31,12 +31,12 @@ Go to torchrl directory.
 Please use the following to launch the training (```hpca_ae_exp_4_3``` is a configuration that require flush instruction.)
 
 ```
-(py38) $ python /lab/src/torchrl/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+(py38) $ python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
 ```
 
 Once the return is close to 1, please use the following to sample the attack.
 
 ```
-(py38) $ /lab/src/torchrl/sampling_trajectories.py --saved_path=saved_ppo_attack-exp0 --num-rollouts=1
+(py38) $ /lab/src/rlmeta/sampling_attack.py
 ```
 Which it will generate the attack sequence.
