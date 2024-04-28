@@ -2,9 +2,9 @@
 
 The gym environment described in Part 1 does not include the flush instruction in the environment, as a result, it will
 not be able to find flush+reload attacks commonly used. Even though the cache simulator has the interface for flush instruction,
-the gym environment did not expose the flush to the ```action_space()```, in this excercise, we aim at extending the gym environment to incorporate the flush action into the gym environment. We directly modify the [```src/cache_guessing_game_env_impl.py```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py).
+the gym environment did not expose the flush to the ```action_space()```, in this excercise, we aim at extending the gym environment to incorporate the flush action into the gym environment. We directly modify the [```src/cache_guessing_game_env_impl.py```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py).
 
-We use a flag [```flush_inst```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L100) to indicate whether we want to include flush instruction for the attacker, by default it is not enabled.
+We use a flag [```flush_inst```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L100) to indicate whether we want to include flush instruction for the attacker, by default it is not enabled.
 
 ### Quick Refresher on Flush + Reload Cache Timing Attacks
 
@@ -33,15 +33,15 @@ The Flush+Reload technique is a side-channel attack that exploits shared cache m
 
 ### Modify the ```action_space``` to Incorporate Flush Action
 
-First, the original [```action_space```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
+First, the original [```action_space```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L172) does not include the encodings for flush action, we need to extend the size of the action_space to include necessary encoding for flushing different attacker addresses, this is defined [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L177).
 
 ### Modify the Action Parser ```parse_action()``` 
 
-Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L441). Once [```is_flush```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L445).
+Second, after we increase the action space size, we still need to decode/parse the action so that we know which encoding corresponds to flushing which address. This is defined [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L441). Once [```is_flush```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L446) is set 1, it means the action correspond to a flush instruction which flushes the [address](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py#L445).
 
 ### Perform the Flush Instruction in ```step()```
 
-Finally, even if we know what the action means, we still need to actually invoke proper [cache simulator's API](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py) in the [```step()```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204) of the cache environment. This is an coding exercise, please fill in the proper API [here](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L295).
+Finally, even if we know what the action means, we still need to actually invoke proper [cache simulator's API](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py) in the [```step()```](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L204) of the cache environment. This is an coding exercise, please fill in the proper API [here](https://github.com/ut-ldma/lab/blob/main/src/cache_guessing_game_env_impl.py?plain=1#L295).
 
 ### Train the Modified Env to Explore Flush+Reload Attack
 
