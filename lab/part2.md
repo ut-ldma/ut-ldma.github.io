@@ -66,7 +66,7 @@ Reinforcement Learning is a type of machine learning where an agent learns to ma
 
 ### Train the RL agent using RLMeta
 
-[```src/rlmeta/train_ppo_attack.py```]([https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py)) is the script for training. The default configuration for training is specified in [```src/rlmeta/config/ppo_attack.yaml```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/ppo_attack.yaml). The environment configuration is specified in [```src/torchrl/config/env_config/```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/env_config) and the model configuration of the policy net is specified in 
+[```src/rlmeta/train_ppo_attack.py```]([https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py)) is the script for training. The default configuration for training is specified in [```src/rlmeta/config/ppo_attack.yaml```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/ppo_attack.yaml). The environment configuration is specified in [```src/rlmeta/config/env_config/```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/env_config) and the model configuration of the policy net is specified in 
 [```src/rlmeta/config/model_config/```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/model_config).
 
 Please use the following to launch the training
