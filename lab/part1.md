@@ -10,9 +10,9 @@ Below is a brief summary of the gym API:
 
 * ```__init()__```
     - ```observation_space```: the observation space is defined here, the observation space is ...
-    -     Cache Hit/Miss Information: Indicating whether each action resulted in a cache hit or miss.
-    -     Latency Measurements: The time taken for each cache operation, which can provide insights into whether data was fetched from the cache or main memory.
-    -     State of Cache Lines: Information about which data or tags are currently stored in specific cache lines, potentially represented in a structured format like a vector or matrix.
+        -  Cache Hit/Miss Information: Indicating whether each action resulted in a cache hit or miss.
+        -  Latency Measurements: The time taken for each cache operation, which can provide insights into whether data was fetched from the cache or main memory.
+        -  State of Cache Lines: Information about which data or tags are currently stored in specific cache lines, potentially represented in a structured format like a vector or matrix.
      
     - ```action_space```: the action space is defined here, the action space is ...
 
