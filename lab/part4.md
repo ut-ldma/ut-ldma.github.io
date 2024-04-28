@@ -1,3 +1,6 @@
+### Notice
+It is highly suggested to look over Parts 1, 2, and 3 before Part 4's Coding Challenge. 
+
 ### Flush + Reload Cache Timing Attacks
 
 The gym environment described in Part 1 does not include the flush instruction in the environment, as a result, it will
