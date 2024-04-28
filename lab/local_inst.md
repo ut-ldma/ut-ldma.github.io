@@ -8,16 +8,16 @@ For Apple m series chip use the following to launch and run (note the autocat-to
 docker pull ml2558/autocat-torchrl:apple-m1
 docker run -it ml2558/autocat-torchrl:apple-m1 /bin/bash
 ```
-Inside the docker containeer, set the conda environment variables and activate py38 environment.
+Inside the docker containeer, set the conda environment variables and activate py39 environment.
 
 ```
 eval "$(/root/miniconda3/bin/conda shell.bash hook)" 
-conda activate py38
+conda activate py39
 ```
 
 Launch the training
 ```
-cd AutoCAT/src/torchrl
+cd AutoCAT/src/rlmeta
 python train_ppo_attack.py
 ```
 
@@ -38,21 +38,10 @@ eval "$(/root/miniconda3/bin/conda shell.bash hook)"
 conda activate py38
 ```
 
-To install the latest version of TorchRL and tensordict, execute these commands:
-
-```
-pip install git+https://github.com/pytorch-labs/tensordict
-pip install git+https://github.com/pytorch/rl
-```
-Checkout ```cpu``` branch of ```https://github.com/rl4cas/lab```.
-
-```
-git clone https://github.com/rl4cas/lab -b cpu
-```
-
 Launch the training
+
 ```
-cd AutoCAT/src/torchrl
+cd AutoCAT/src/rlmeta
 python train_ppo_attack.py
 ```
 
