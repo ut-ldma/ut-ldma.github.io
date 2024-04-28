@@ -15,11 +15,10 @@ Below is a brief summary of the gym API:
         -  State of Cache Lines: Information about which data or tags are currently stored in specific cache lines, potentially represented in a structured format like a vector or matrix.
      
     - ```action_space```: the action space is defined here, the action space is ...
-
-      #Read: Accessing a specific cache line to read data.
-      #Write: Writing data to a specific cache line.
-      #Flush (clflush): Flushing a specific cache line, which is commonly used in cache attack scenarios to manipulate or infer the state of the cache.
-      #Guess: An action where the agent attempts to guess secret data based on observed cache behavior (more relevant in an adversarial scenario like a cache timing attack). 
+        - Read: Accessing a specific cache line to read data.
+        - Write: Writing data to a specific cache line.
+        - Flush (clflush): Flushing a specific cache line, which is commonly used in cache attack scenarios to manipulate or infer the state of the cache.
+        - Guess: An action where the agent attempts to guess secret data based on observed cache behavior (more relevant in an adversarial scenario like a cache timing attack). 
 
 * ```step(action) --> state, reward, done, info```
     - ```action```: How to perform the action is defined here
