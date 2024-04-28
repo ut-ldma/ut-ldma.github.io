@@ -6,6 +6,26 @@ the gym environment did not expose the flush to the ```action_space()```, in thi
 
 We use a flag [```flush_inst```](https://github.com/rl4cas/lab/blob/main/src/cache_guessing_game_env_impl.py#L100) to indicate whether we want to include flush instruction for the attacker, by default it is not enabled.
 
+### Quick Refresher on Flush + Reload Cache Timing Attacks
+
+## Flush+Reload Attack Summary
+
+The Flush+Reload technique is a side-channel attack that exploits shared cache memory to infer activities of other processes on the same system. This technique involves two primary steps within the cache simulator:
+
+### Steps of the Flush+Reload Attack
+
+1. **Flush**:
+   - **Action**: The attacker forcibly removes (flushes) a target line of memory from the cache.
+   - **Method**: This is achieved using the `clflush` method in the cache simulator, where a specific address is cleared out of the cache memory.
+
+2. **Reload**:
+   - **Action**: The attacker then accesses the same memory address.
+   - **Observation**:
+     - **Fast Access**: If the data is accessed quickly, it suggests that the data was reloaded into the cache by the victim's process, indicating that the victim accessed the same data after it was flushed. This results in a cache hit.
+     - **Slow Access**: If the data access is slow, it indicates a cache miss, suggesting the data was not used by the victim after the flush.
+
+<img src="fig/flushandreload_new.png" width=1500 align=right>
+
 
 ### Modify the ```action_space``` to Incorporate Flush Action
 
