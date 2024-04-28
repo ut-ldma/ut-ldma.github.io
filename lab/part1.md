@@ -31,7 +31,7 @@ Guess: An action where the agent attempts to guess secret data based on observed
 
 ### Cache Simulator Interface
 
-The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attaks. The cache simulator (in [```src/cache.py```](https://github.com/rl4cas/lab/blob/main/src/cache.py) ) implements the basic functions that are representative of a real-world cache. These include
+The main focus of the environment used is a cache simulator, which forms the backbone of the cache timing attacks. The cache simulator (in [```src/cache.py```](https://github.com/rl4cas/lab/blob/main/src/cache.py) ) implements the basic functions that are representative of a real-world cache. These include
 
 ```init()```, ```read()```, ```write()```, ```clflush()``` and ```parse_address()```, these functions are defined accordingly.
 
