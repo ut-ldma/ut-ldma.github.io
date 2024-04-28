@@ -1,6 +1,6 @@
 ### Introduction
 
-The lab uses torchRL and open AI gym. The training can be performed on CPU/GPU, however, it is best that the experiments is running on GPU. 
+The lab uses rlmeta and open AI gym. The training can be performed on CPU/GPU, however, it is best that the experiments is running on GPU. 
 In order to streamline the setup process and focus on the environment construction and training we have AWS ```g5.xlarge``` instances for use and 
 provide docker images to manage all the dependencies. (If you are unable to connect to the AWS machine, you can try running the training locally following [this instructions](local_inst.md). However, it is suggested that the local machine has CUDA support, otherwise the training could be very slow.)
 
@@ -49,6 +49,29 @@ conda activate py38
 cd lab/src/rlmeta
 python train_ppo_attack.py table_view=true
 ```
+Here are the results that you should be expecting to show up on your screen. First the replay buffer will be filled. 
 
-Be sure to observe the return (return for training, episode_return for testing) for each epoch. This is the reward for each epoch, and while it starts off low, it should be getting higher after a couple of epochs, converging close to 1. 
+```
+...
+[20:53:45] Warming up replay buffer: [   1478 / 131072 ]                                         replay_buffer.py:208
+[20:53:46] Warming up replay buffer: [   1709 / 131072 ]                                         replay_buffer.py:208
+[20:53:47] Warming up replay buffer: [   1937 / 131072 ]                                         replay_buffer.py:208
+[20:53:48] Warming up replay buffer: [   2179 / 131072 ]                                         replay_buffer.py:208
+[20:53:54] Warming up replay buffer: [   3596 / 131072 ]                                         replay_buffer.py:208
+...
+```
+Then training will begin with results for every epoch. 
+
+```
+
+...
+
+
+
+
+...
+```
+
+
+Be sure to observe the return (episode_return for training (T), episode_return for evaluation (E)) for each epoch. This is the reward for each epoch for training and evaluation, and while it starts off low, it should be getting higher after a couple of epochs, converging close to 1. 
 
