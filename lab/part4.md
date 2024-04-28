@@ -49,18 +49,18 @@ Once the flush instruction is included, please use the following command to laun
 
 Go to torchrl directory.
 ```
-(py38) $ cd /lab/src/rlmeta
+cd /lab/src/rlmeta
 ```
 
 Please use the following to launch the training (```hpca_ae_exp_4_3``` is a configuration that require flush instruction.)
 
 ```
-(py38) $ python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
+python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
 ```
 
 Once the return is close to 1, please use the following to sample the attack.
 
 ```
-(py38) $ python /lab/src/rlmeta/sampling_attack.py
+python /lab/src/rlmeta/sampling_attack.py
 ```
 Which it will generate the attack sequence.
