@@ -24,11 +24,15 @@ The Flush+Reload technique is a side-channel attack that exploits shared cache m
      - **Fast Access**: If the data is accessed quickly, it suggests that the data was reloaded into the cache by the victim's process, indicating that the victim accessed the same data after it was flushed. This results in a cache hit.
      - **Slow Access**: If the data access is slow, it indicates a cache miss, suggesting the data was not used by the victim after the flush.
 
+###
+###
+###
+
 <img src="fig/flushandreload_new.png" width=1500 align=right>
 
-<br> 
-<br>
-<br>
+###
+###
+###
 
 ### Modify the ```action_space``` to Incorporate Flush Action
 
