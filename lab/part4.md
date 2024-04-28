@@ -61,7 +61,13 @@ Please use the following to launch the training (```hpca_ae_exp_4_3``` is a conf
 python /lab/src/rlmeta/train_ppo_attack.py env_config=hpca_ae_exp_4_3
 ```
 
-Once the return is close to 1, please use the following to sample the attack.
+Once the return is close to 1, press CTRL^C to interrupt the process and please use the following to sample the attack.
+
+```
+nano /lab/src/rlmeta/config/sample_attack.yaml
+Add checkpoint by going to /lab/src/rlmeta/outputs/<day>/<UTC-timestamp>/<most-recent-agent>.pth, and getting path and adding path to checkpoint
+```
+Then run, 
 
 ```
 python /lab/src/rlmeta/sampling_attack.py
