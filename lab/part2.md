@@ -3,7 +3,7 @@
 Now that we have shown how an gym environment is constructed, we need to train an RL agent to interact with the environment. There are many existing RL frameworks that are compatible with the standard gym environment, here are some notable examples:
 
 * [TorchRL](https://pytorch.org/rl/), torchRL is part of the famous pytorch framework, development lead by Vincent Moens from Meta.
-* [RLLib/Ray](https://docs.ray.io/en/latest/rllib/index.html)
+* [RLLib/Ray](https://docs.ray.io/en/latest/rllib/index.html), RLLib/Ray is an open-source RL library for distributed workloads, useful with multi-agent setting. 
 * [Rlmeta](https://github.com/facebookresearch/rlmeta), also developed by Meta.
 
 These frameworks have their individual strengths. However, for the cache guessing game, all of them works for this purpose. We use TorchRL as the example. For TorchRL, the related torchRL script are located in ```src/torchrl/```. For RLMeta, the related script are located in ```src/rlmeta/```. 
