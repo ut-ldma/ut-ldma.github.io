@@ -110,10 +110,7 @@ This method is crucial for simulating realistic cache operations, including read
 
 
 
-[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L172): perform a write operation through the cache interface
-
-### Overview
-The write method is not needed in our lab, and thus not implemented.
+[```write()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L172): usually used to perform a write operation through the cache interface. The write method is not needed in our lab, and thus not implemented.
 
 [```clflush()```](https://github.com/rl4cas/lab/blob/main/src/cache.py?plain=1#L69): flush a specific address from the cache hierachy
 
