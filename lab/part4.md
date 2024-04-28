@@ -67,6 +67,8 @@ Once the return is close to 1, press CTRL^C to interrupt the process and please 
 nano /lab/src/rlmeta/config/sample_attack.yaml
 Add checkpoint by going to /lab/src/rlmeta/outputs/<day>/<UTC-timestamp>/<most-recent-agent>.pth, and getting path and adding path to checkpoint
 ```
+### Note: One important thing to note is that if your training does not get a good reward, we have a checkpoint for you to use! The path for that checkpoint is ```src/rlmeta/outputs/ppo_agent-99.pth```. On that path is also ``` src/rlmeta/outputs/train_ppo_attack.log``` if you want to observe an average training for this agent. 
+
 Then run, 
 
 ```
