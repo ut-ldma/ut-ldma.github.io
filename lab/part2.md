@@ -64,7 +64,7 @@ Reinforcement Learning is a type of machine learning where an agent learns to ma
 8. **State Transition**:
    - **State Transition** defines how the next state of the environment is affected by the current state and the action taken by the agent. This transition follows the dynamics of the environment, which are usually modelled as a probability distribution in the case of stochastic environments.
 
-### Train the RL agent using RLMeta
+### OPTIONAL AFTER PART 4: Train the RL agent using RLMeta
 
 [```src/rlmeta/train_ppo_attack.py```]([https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/train_ppo_attack.py)) is the script for training. The default configuration for training is specified in [```src/rlmeta/config/ppo_attack.yaml```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/ppo_attack.yaml). The environment configuration is specified in [```src/rlmeta/config/env_config/```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/env_config) and the model configuration of the policy net is specified in 
 [```src/rlmeta/config/model_config/```](https://github.com/ut-ldma/lab/blob/main/src/rlmeta/config/model_config).
