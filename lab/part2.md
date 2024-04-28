@@ -13,8 +13,8 @@ These frameworks have their individual strengths. However, for the cache guessin
 
 ### Train the RL agent using TorchRL
 
-[```src/torchrl/train_ppo_attack.py```](https://github.com/rl4cas/lab/blob/main/src/torchrl/train_ppo_attack.py) is the script for training. The default configuration for training is specified in [```src/torchrl/config/ppo_attack.yaml```](https://github.com/rl4cas/lab/blob/main/src/torchrl/config/ppo_attack.yaml). The environment configuration is specified in [```src/torchrl/config/env_config/```](https://github.com/rl4cas/lab/blob/main/src/torchrl/config/env_config) and the model configuration of the policy net is specified in 
-[```src/torchrl/config/model_config/```](https://github.com/rl4cas/lab/blob/main/src/torchrl/config/model_config).
+[```src/torchrl/train_ppo_attack.py```](https://github.com/ut-ldma/lab/blob/main/src/torchrl/train_ppo_attack.py) is the script for training. The default configuration for training is specified in [```src/torchrl/config/ppo_attack.yaml```](https://github.com/ut-ldma/lab/blob/main/src/torchrl/config/ppo_attack.yaml). The environment configuration is specified in [```src/torchrl/config/env_config/```](https://github.com/ut-ldma/lab/blob/main/src/torchrl/config/env_config) and the model configuration of the policy net is specified in 
+[```src/torchrl/config/model_config/```](https://github.com/ut-ldma/lab/blob/main/src/torchrl/config/model_config).
 
 Please use the following to launch the training
 
