@@ -25,6 +25,17 @@ docker run -it --gpus all ml2558/autocat-rlmeta /bin/bash
 
 After that you will be prompt to a docker shell.
 
+Before you continue there are two important things to do. First, you must install nano.
+
+```
+apt-get install nano
+```
+Second, you must clone the lab repo. 
+
+```
+git clone https://github.com/ut-ldma/lab.git
+```
+
 ### Activate the conda environment
 
 Inside the docker container, set the conda environment variables and activate the py38 environment
@@ -35,7 +46,7 @@ conda activate py38
 ```
 
 ```
-cd AutoCAT/src/rlmeta
+cd lab/src/rlmeta
 python train_ppo_attack.py table_view=true
 ```
 
