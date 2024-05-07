@@ -20,7 +20,7 @@ This tutorial will be held at [ASPLOS 2024](https://www.asplos-conference.org/as
 
 ### Link to Slides
 
-Here is a [link](docs/ut-ldma-v6.pdf) to the slides for preview of tutorial. 
+Here is a [link](imgs/ut-ldma-v6.pdf) to the slides for preview of tutorial. 
 
 ### Tentative Schedule
 
